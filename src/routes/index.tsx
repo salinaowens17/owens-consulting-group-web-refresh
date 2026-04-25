@@ -82,7 +82,7 @@ function HomePage() {
                 for Code Enforcement Officers.
               </p>
               <Link
-                to="/courses"
+                to="/schedules"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
               >
                 See upcoming courses <ArrowRight className="h-4 w-4" />
