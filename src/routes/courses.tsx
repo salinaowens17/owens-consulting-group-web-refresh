@@ -139,33 +139,44 @@ function CoursesPage() {
 
       <section className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
         <div className="grid gap-4 rounded-2xl border border-border bg-surface p-8 md:grid-cols-2 md:gap-8 md:p-10">
-          <div className="flex items-start gap-4">
-            <span className="flex h-11 w-11 items-center justify-center rounded-md bg-primary text-primary-foreground">
+          <Link
+            to="/schedules"
+            className="group flex items-start gap-4 rounded-xl p-2 transition-colors hover:bg-background"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
               <FileText className="h-5 w-5" />
             </span>
             <div>
-              <h3 className="font-serif text-lg font-semibold text-primary">
+              <h3 className="font-serif text-lg font-semibold text-primary group-hover:text-accent">
                 Online course schedule
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Email us for the current online course schedule and enrollment details.
+                See current online and live-virtual course dates and register.
               </p>
+              <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-accent">
+                View schedule <ArrowRight className="h-4 w-4" />
+              </span>
             </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <span className="flex h-11 w-11 items-center justify-center rounded-md bg-primary text-primary-foreground">
+          </Link>
+          <Link
+            to="/schedules"
+            className="group flex items-start gap-4 rounded-xl p-2 transition-colors hover:bg-background"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
               <FileText className="h-5 w-5" />
             </span>
             <div>
-              <h3 className="font-serif text-lg font-semibold text-primary">
+              <h3 className="font-serif text-lg font-semibold text-primary group-hover:text-accent">
                 In-person 2026 schedule
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Our 2026 in-person schedule is published — contact us for available dates and
-                locations.
+                Browse upcoming in-person classes across Texas and reserve your seat.
               </p>
+              <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-accent">
+                View schedule <ArrowRight className="h-4 w-4" />
+              </span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
     </SiteShell>
