@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -11,8 +12,6 @@
  * Typography: Playfair Display (serif headings) + Inter (body).
  * Tone: professional, trustworthy, environmental/regulatory.
  */
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @theme inline {
   --font-serif: "Playfair Display", Georgia, serif;
