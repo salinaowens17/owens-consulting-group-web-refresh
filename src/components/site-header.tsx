@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Leaf, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ocgLogo from "@/assets/ocg-logo.svg";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -19,11 +20,15 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b border-border/70 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 md:px-8">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-primary-foreground shadow-sm">
-            <Leaf className="h-5 w-5 text-accent" />
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="font-serif text-lg font-semibold text-primary">
+          <img
+            src={ocgLogo}
+            alt="Owens Consulting Group"
+            width={56}
+            height={60}
+            className="h-14 w-auto"
+          />
+          <span className="hidden flex-col leading-tight sm:flex">
+            <span className="font-serif text-base font-semibold text-primary">
               Owens Consulting Group
             </span>
             <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
