@@ -33,7 +33,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "TCEQ-approved environmental compliance training and consulting in Texas. MSW supervisor licensing, waste screening, chemical inventory audits, and First Aid/CPR/AED.",
+          "TCEQ-approved environmental compliance training and consulting in Texas. MSW supervisor licensing, waste screening, and chemical inventory audits.",
       },
       { name: "author", content: "Owens Consulting Group" },
       { property: "og:type", content: "website" },

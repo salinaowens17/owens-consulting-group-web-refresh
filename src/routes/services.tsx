@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ClipboardCheck, FileSearch, HeartPulse } from "lucide-react";
+import { ArrowRight, ClipboardCheck, FileSearch } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/services")({
@@ -9,7 +9,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "On-site SOP training, chemical inventory audits per OSHA 29 CFR 1910.1200(g), and First Aid/CPR/AED certification across Texas.",
+          "On-site SOP training and chemical inventory audits per OSHA 29 CFR 1910.1200(g) across Texas.",
       },
       {
         property: "og:title",
@@ -17,8 +17,7 @@ export const Route = createFileRoute("/services")({
       },
       {
         property: "og:description",
-        content:
-          "SOP training, chemical inventory audits, and First Aid/CPR/AED certification.",
+        content: "SOP training and chemical inventory audits for Texas facilities.",
       },
     ],
   }),
@@ -39,13 +38,6 @@ const services = [
     title: "Chemical Inventory Audits",
     body: "Professional review and audit of all chemicals maintained on-site, paired with the most current Safety Data Sheets (SDSs). Comprehensive and compliant with OSHA Standard 29 CFR 1910.1200(g).",
     cite: "OSHA 29 CFR 1910.1200(g)",
-  },
-  {
-    icon: <HeartPulse className="h-5 w-5" />,
-    eyebrow: "Life safety",
-    title: "First Aid / CPR / AED",
-    body: "Quality expert training as a provider for the American Safety & Health Institute, the American Red Cross, and the American Heart Association. Available for individuals and teams.",
-    cite: "ASHI · ARC · AHA Provider",
   },
 ];
 
@@ -69,7 +61,7 @@ function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {services.map((s) => (
             <article
               key={s.title}
@@ -109,9 +101,9 @@ function ServicesPage() {
                 Need something tailored?
               </h2>
               <p className="mt-3 max-w-xl text-primary-foreground/75">
-                We regularly customize on-site SOP training, audits, and life-safety
-                certification programs for facility teams across Texas. Email us with the
-                details and we'll get back to you with options.
+                We regularly customize on-site SOP training and chemical inventory audits
+                for facility teams across Texas. Email us with the details and we'll get
+                back to you with options.
               </p>
             </div>
             <Link

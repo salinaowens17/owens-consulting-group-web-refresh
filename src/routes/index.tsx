@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "TCEQ-approved environmental compliance training and consulting. MSW supervisor licensing, waste screening, chemical inventory audits, and First Aid/CPR/AED in Texas.",
+          "TCEQ-approved environmental compliance training and consulting. MSW supervisor licensing, waste screening, and chemical inventory audits in Texas.",
       },
       {
         property: "og:title",
@@ -39,14 +39,13 @@ function HomePage() {
               <Sprout className="h-3.5 w-3.5" />
               Texas-based · TCEQ Provider #782
             </span>
-            <h1 className="mt-5 text-balance font-serif text-[1.6rem] font-semibold leading-[1.2] tracking-tight text-primary sm:text-3xl md:mt-6 md:text-4xl md:leading-[1.15] lg:text-5xl">
-              A{"\u00A0"}TCEQ-approved training provider serving Texas with regulatory
-              training, environmental compliance support, and life-safety certification.
+            <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
+              TCEQ-approved training provider in Texas.
             </h1>
             <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
-              From MSW supervisor licensing and waste screening to chemical inventory audits
-              and First{"\u00A0"}Aid/CPR/AED, Owens Consulting Group helps Texas facilities
-              and professionals stay licensed, compliant, and prepared.
+              From MSW supervisor licensing and waste screening to chemical inventory
+              audits and site-specific SOP training, Owens Consulting Group helps Texas
+              facilities and professionals stay licensed, compliant, and prepared.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
               <Link
@@ -178,7 +177,7 @@ function HomePage() {
             <PracticeRow
               icon={<ShieldCheck className="h-5 w-5" />}
               title="Environmental compliance support"
-              body="Site-specific SOP training, chemical inventory audits, and First Aid/CPR/AED certification."
+              body="Site-specific SOP training and chemical inventory audits aligned with OSHA and TCEQ requirements."
               to="/services"
             />
           </div>
@@ -194,8 +193,8 @@ function HomePage() {
                 Ready to schedule a course or audit?
               </h2>
               <p className="mt-4 max-w-xl text-primary-foreground/75">
-                Email us for course registration, on-site SOP training, chemical inventory
-                audits, or to schedule First Aid/CPR/AED training.
+                Email us for course registration, on-site SOP training, or to schedule a
+                chemical inventory audit.
               </p>
             </div>
             <div className="flex flex-col gap-3">

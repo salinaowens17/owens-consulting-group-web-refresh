@@ -23,9 +23,9 @@ export function SiteHeader() {
           <img
             src={ocgLogo}
             alt="Owens Consulting Group"
-            width={56}
-            height={60}
-            className="h-14 w-auto"
+            width={60}
+            height={50}
+            className="h-12 w-auto"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-base font-semibold text-primary">
