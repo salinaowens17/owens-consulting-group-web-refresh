@@ -48,7 +48,7 @@ function HomePage() {
               and First{"\u00A0"}Aid/CPR/AED, Owens Consulting Group helps Texas facilities
               and professionals stay licensed, compliant, and prepared.
             </p>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
               <Link
                 to="/courses"
                 className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
