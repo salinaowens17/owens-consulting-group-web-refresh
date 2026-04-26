@@ -33,20 +33,20 @@ function HomePage() {
         <div className="absolute inset-0 -z-10 opacity-[0.04]" aria-hidden>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--color-primary)_0%,transparent_55%),radial-gradient(circle_at_80%_70%,var(--color-accent)_0%,transparent_50%)]" />
         </div>
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-12 md:gap-10 md:px-8 md:py-28">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:py-16 md:grid-cols-12 md:gap-10 md:px-8 md:py-24 lg:py-28">
           <div className="md:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
               <Sprout className="h-3.5 w-3.5" />
               Texas-based · TCEQ Provider #782
             </span>
-            <h1 className="mt-6 font-serif text-3xl font-semibold leading-[1.15] tracking-tight text-primary md:text-5xl">
-              A TCEQ-approved training provider serving Texas with regulatory training,
-              environmental compliance support, and life-safety certification.
+            <h1 className="mt-5 text-balance font-serif text-[1.6rem] font-semibold leading-[1.2] tracking-tight text-primary sm:text-3xl md:mt-6 md:text-4xl md:leading-[1.15] lg:text-5xl">
+              A{"\u00A0"}TCEQ-approved training provider serving Texas with regulatory
+              training, environmental compliance support, and life-safety certification.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
               From MSW supervisor licensing and waste screening to chemical inventory audits
-              and First Aid/CPR/AED, Owens Consulting Group helps Texas facilities and
-              professionals stay licensed, compliant, and prepared.
+              and First{"\u00A0"}Aid/CPR/AED, Owens Consulting Group helps Texas facilities
+              and professionals stay licensed, compliant, and prepared.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
