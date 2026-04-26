@@ -60,8 +60,8 @@ export function SiteFooter() {
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/75">
-            A TCEQ-approved training provider serving Texas with regulatory training,
-            environmental compliance support, and life-safety certification.
+            A TCEQ-approved training provider serving Texas with regulatory training and
+            environmental compliance support.
           </p>
         </div>
 

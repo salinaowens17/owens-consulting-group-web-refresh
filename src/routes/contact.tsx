@@ -15,7 +15,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact — Owens Consulting Group" },
       {
         property: "og:description",
-        content: "Email us to schedule training, audits, or First Aid/CPR/AED certification.",
+        content: "Email us to schedule courses, audits, or on-site SOP training.",
       },
     ],
   }),
@@ -36,8 +36,8 @@ function ContactPage() {
             Let's talk about your next course or audit.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Email us to schedule First Aid/CPR/AED training, request a Chemical Inventory
-            Audit, or enroll in an upcoming TCEQ-approved course.
+            Email us to request a Chemical Inventory Audit, schedule on-site SOP training,
+            or enroll in an upcoming TCEQ-approved course.
           </p>
         </div>
       </section>
