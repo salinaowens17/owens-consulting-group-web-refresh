@@ -39,14 +39,14 @@ function HomePage() {
               <Sprout className="h-3.5 w-3.5" />
               Texas-based · TCEQ Provider #782
             </span>
-            <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-primary md:text-6xl">
-              Environmental compliance training, done with care.
+            <h1 className="mt-6 font-serif text-3xl font-semibold leading-[1.15] tracking-tight text-primary md:text-5xl">
+              A TCEQ-approved training provider serving Texas with regulatory training,
+              environmental compliance support, and life-safety certification.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Owens Consulting Group is a TCEQ-approved training provider helping Texas
-              facilities and professionals stay licensed, compliant, and prepared — from
-              MSW supervisor courses to chemical inventory audits and life-safety
-              certification.
+              From MSW supervisor licensing and waste screening to chemical inventory audits
+              and First Aid/CPR/AED, Owens Consulting Group helps Texas facilities and
+              professionals stay licensed, compliant, and prepared.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
