@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-label="Owens Consulting Group">
+  <!-- Gear (industrial / navy) -->
+  <g transform="translate(120 110)">
+    <g fill="#1f2a44">
+      <!-- 12 gear teeth -->
+      <g>
+        <rect x="-10" y="-95" width="20" height="22" rx="3"/>
+        <rect x="-10" y="73" width="20" height="22" rx="3"/>
+        <rect x="-95" y="-10" width="22" height="20" rx="3"/>
+        <rect x="73" y="-10" width="22" height="20" rx="3"/>
+      </g>
+      <g transform="rotate(30)">
+        <rect x="-10" y="-95" width="20" height="22" rx="3"/>
+        <rect x="-10" y="73" width="20" height="22" rx="3"/>
+        <rect x="-95" y="-10" width="22" height="20" rx="3"/>
+        <rect x="73" y="-10" width="22" height="20" rx="3"/>
+      </g>
+      <g transform="rotate(60)">
+        <rect x="-10" y="-95" width="20" height="22" rx="3"/>
+        <rect x="-10" y="73" width="20" height="22" rx="3"/>
+        <rect x="-95" y="-10" width="22" height="20" rx="3"/>
+        <rect x="73" y="-10" width="22" height="20" rx="3"/>
+      </g>
+    </g>
+    <!-- Gear body -->
+    <circle r="78" fill="#1f2a44"/>
+    <!-- Inner C cutout (white) -->
+    <circle r="50" fill="#ffffff"/>
+    <!-- Open the C on the right -->
+    <path d="M0 -50 A50 50 0 0 1 0 50 L0 22 A22 22 0 0 0 0 -22 Z" fill="#1f2a44"/>
+    <!-- Center hole -->
+    <circle r="20" fill="#ffffff"/>
+  </g>
+
+  <!-- Green leaf overlapping the upper-right -->
+  <g transform="translate(168 60) rotate(28)">
+    <path d="M0 0 C 18 -55 70 -55 78 0 C 70 55 18 55 0 0 Z" fill="#3a8a3a"/>
+    <path d="M0 0 C 18 -55 70 -55 78 0 C 70 55 18 55 0 0 Z" fill="#5cae4d" opacity="0.55"/>
+    <!-- midrib -->
+    <path d="M2 0 C 20 -8 50 -10 76 0" stroke="#1f2a44" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- veins -->
+    <path d="M14 -4 C 22 -16 32 -22 40 -22" stroke="#1f2a44" stroke-width="1.4" fill="none"/>
+    <path d="M30 -2 C 38 -14 48 -18 56 -18" stroke="#1f2a44" stroke-width="1.4" fill="none"/>
+    <path d="M14 4 C 22 16 32 22 40 22" stroke="#1f2a44" stroke-width="1.4" fill="none"/>
+    <path d="M30 2 C 38 14 48 18 56 18" stroke="#1f2a44" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- Underline accents -->
+  <line x1="20" y1="218" x2="220" y2="218" stroke="#3a8a3a" stroke-width="2"/>
+  <line x1="20" y1="252" x2="220" y2="252" stroke="#3a8a3a" stroke-width="2"/>
+
+  <!-- Wordmark -->
+  <text x="120" y="240" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#1f2a44" letter-spacing="0.5">
+    OWENS CONSULTING
+  </text>
+  <text x="120" y="272" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#1f2a44" letter-spacing="2">
+    GROUP
+  </text>
+</svg>
