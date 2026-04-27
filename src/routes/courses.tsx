@@ -78,7 +78,7 @@ const safetyCourses = [
     duration: "4–5 hours",
     audience:
       "Workplace responders, childcare providers, coaches, and anyone needing a 2-year certification",
-    body: "Comprehensive American Heart Association / American Red Cross-aligned certification covering adult, child, and infant CPR, AED operation, choking response, and first aid for common injuries and sudden illness. Includes hands-on skills practice and a 2-year certification card upon successful completion.",
+    body: "American Heart Association / American Red Cross-aligned certification includes hands-on skills practice and a 2-year certification card upon successful completion.",
   },
   {
     icon: <Activity className="h-5 w-5" />,
@@ -86,7 +86,7 @@ const safetyCourses = [
     duration: "4–5 hours",
     audience:
       "Nurses, EMS, medical/dental office staff, and other healthcare professionals",
-    body: "BLS certification course covering high-quality CPR for adults, children, and infants; AED use; bag-mask techniques; relief of choking; and effective team dynamics in single-rescuer and multi-rescuer scenarios. Includes a 2-year BLS Provider card upon successful completion.",
+    body: "BLS certification course includes a 2-year BLS Provider card upon successful completion.",
   },
   {
     icon: <ShieldPlus className="h-5 w-5" />,
@@ -94,7 +94,7 @@ const safetyCourses = [
     duration: "1–2 hours",
     audience:
       "Employees with reasonably anticipated occupational exposure to blood or other potentially infectious materials",
-    body: "OSHA-compliant Bloodborne Pathogens training meeting the requirements of 29 CFR 1910.1030. Covers exposure control plans, PPE, safe work practices, post-exposure procedures, and Hepatitis B vaccination information. Can be bundled with First Aid/CPR/AED for full workplace responder certification.",
+    body: "OSHA-compliant Bloodborne Pathogens training meeting the requirements of 29 CFR 1910.1030. Can be bundled with First Aid/CPR/AED for full workplace responder certification.",
     cite: "OSHA 29 CFR 1910.1030",
   },
 ];
