@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
+import teamJulie from "@/assets/team-julie.jpg";
+import teamErasmo from "@/assets/team-erasmo.jpg";
+import teamGordon from "@/assets/team-gordon.jpg";
+import teamMonica from "@/assets/team-monica.jpeg";
+import teamBrad from "@/assets/team-brad.jpeg";
+import credChmm from "@/assets/cred-chmm.png";
+import credTxGeo from "@/assets/cred-tx-geoscientists.png";
+import credAipg from "@/assets/cred-aipg.png";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -24,16 +32,29 @@ export const Route = createFileRoute("/team")({
   component: TeamPage,
 });
 
-const team = [
+type Credential = { src: string; alt: string };
+
+type Member = {
+  name: string;
+  credentials: string;
+  title: string;
+  photo?: string;
+  badges?: Credential[];
+};
+
+const team: Member[] = [
   {
     name: "Julie Spradley",
     credentials: "CHMM, REM",
     title: "CEO",
+    photo: teamJulie,
+    badges: [{ src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" }],
   },
   {
     name: "Erasmo Yarrito Jr.",
     credentials: "Solid Waste Industry Expert",
     title: "Senior Instructor",
+    photo: teamErasmo,
   },
   {
     name: "David Dugger",
@@ -44,18 +65,25 @@ const team = [
     name: "Gordon Spradley",
     credentials: "AIPG, PG",
     title: "International Landfill Operations & Remediation Expert",
+    photo: teamGordon,
+    badges: [
+      { src: credTxGeo, alt: "Texas Board of Professional Geoscientists" },
+      { src: credAipg, alt: "American Institute of Professional Geologists (AIPG)" },
+    ],
   },
   {
     name: "Brad Newton",
     credentials: "Solid Waste Industry Expert — West Texas",
     title: "Instructor",
+    photo: teamBrad,
   },
   {
     name: "Monica Sowards",
     credentials: "Solid Waste Industry Expert",
     title: "Instructor",
+    photo: teamMonica,
   },
-] as const;
+];
 
 function TeamPage() {
   return (
@@ -98,16 +126,42 @@ function TeamPage() {
                 key={member.name}
                 className="flex flex-col rounded-lg border border-border/70 bg-card p-6 shadow-sm transition-shadow hover:shadow-md"
               >
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 font-serif text-xl font-semibold text-primary">
-                  {member.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .slice(0, 2)
-                    .join("")}
-                </div>
+                {member.photo ? (
+                  <div className="mb-4 h-40 w-40 overflow-hidden rounded-full border border-border/70 bg-muted">
+                    <img
+                      src={member.photo}
+                      alt={`Portrait of ${member.name}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 font-serif text-xl font-semibold text-primary">
+                    {member.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .slice(0, 2)
+                      .join("")}
+                  </div>
+                )}
                 <h2 className="font-serif text-xl font-semibold text-primary">{member.name}</h2>
                 <p className="mt-1 text-sm font-medium text-accent">{member.credentials}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{member.title}</p>
+
+                {member.badges && member.badges.length > 0 ? (
+                  <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border/60 pt-4">
+                    {member.badges.map((badge) => (
+                      <img
+                        key={badge.alt}
+                        src={badge.src}
+                        alt={badge.alt}
+                        title={badge.alt}
+                        loading="lazy"
+                        className="h-16 w-auto object-contain"
+                      />
+                    ))}
+                  </div>
+                ) : null}
               </article>
             ))}
           </div>
