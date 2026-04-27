@@ -68,7 +68,7 @@ function HomePage() {
 
       {/* Credential strip */}
       <section className="border-b border-border bg-background">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-5 py-10 md:grid-cols-4 md:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-5 pb-4 pt-10 md:grid-cols-4 md:px-8">
           {[
             { label: "TCEQ Provider", value: "#782" },
             { label: "TDLR Approved", value: "Course #341" },
