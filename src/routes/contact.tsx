@@ -95,8 +95,12 @@ function ContactPage() {
                   <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
                     Credentials
                   </p>
-                  <p className="mt-1 font-medium text-primary">TCEQ Provider #782</p>
-                  <p className="text-sm text-muted-foreground">TDLR-approved (Course #341)</p>
+                  <ul className="mt-1.5 space-y-1 text-sm">
+                    <li className="font-medium text-primary">TCEQ Training Provider #782</li>
+                    <li className="text-muted-foreground">State of Texas HUB Approved</li>
+                    <li className="text-muted-foreground">City of Houston OBO Approved</li>
+                    <li className="text-muted-foreground">Women&rsquo;s Business Enterprise Approved</li>
+                  </ul>
                 </div>
               </li>
             </ul>
