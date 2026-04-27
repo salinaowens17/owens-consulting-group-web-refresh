@@ -139,26 +139,28 @@ function CoursesAndServicesPage() {
                 compliance services. All of our courses meet the requirements to renew a current
                 MSW License.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href={ONLINE_REGISTRATION_PDF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-                >
-                  <Download className="h-4 w-4" /> Online course registration (PDF)
-                </a>
-                <a
-                  href={IN_PERSON_REGISTRATION_PDF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-                >
-                  <Download className="h-4 w-4" /> In-person course registration (PDF)
-                </a>
+              <div className="mt-8 flex flex-col gap-3">
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={ONLINE_REGISTRATION_PDF}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                  >
+                    <Download className="h-4 w-4" /> Online course registration (PDF)
+                  </a>
+                  <a
+                    href={IN_PERSON_REGISTRATION_PDF}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                  >
+                    <Download className="h-4 w-4" /> In-person course registration (PDF)
+                  </a>
+                </div>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
+                  className="inline-flex w-fit items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
                 >
                   Ask about scheduling <ArrowRight className="h-4 w-4" />
                 </Link>
