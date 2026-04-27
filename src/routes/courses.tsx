@@ -99,7 +99,7 @@ const safetyCourses = [
     duration: "1–2 hours",
     audience:
       "Employees with reasonably anticipated occupational exposure to blood or other potentially infectious materials",
-    body: "OSHA-compliant Bloodborne Pathogens training meeting the requirements of 29 CFR 1910.1030. Can be bundled with First Aid/CPR/AED for full workplace responder certification.",
+    body: "OSHA-compliant Bloodborne Pathogens training meeting the requirements of 29 CFR 1910.1030. Can be bundled with First Aid/CPR/AED.",
     cite: "OSHA 29 CFR 1910.1030",
   },
 ];
