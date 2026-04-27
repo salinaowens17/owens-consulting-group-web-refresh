@@ -214,7 +214,7 @@ function HighlightCard({
     >
       {featured && (
         <span className="absolute -top-3 left-6 rounded-full bg-accent px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-accent-foreground">
-          Recommended
+          Most Popular
         </span>
       )}
       <span
