@@ -12,6 +12,7 @@ const navLinks = [
   { to: "/team", label: "Team" },
   { to: "/resources", label: "Resources" },
   { to: "/contact", label: "Contact" },
+  { to: "/faq", label: "FAQ" },
 ] as const;
 
 export function SiteHeader() {
