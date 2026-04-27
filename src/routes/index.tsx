@@ -194,17 +194,36 @@ function HighlightCard({
   body,
   to,
   cta,
+  featured,
 }: {
   icon: React.ReactNode;
   eyebrow: string;
   title: string;
   body: string;
-  to: "/courses" | "/resources" | "/contact";
+  to: "/courses" | "/resources" | "/contact" | "/schedules";
   cta: string;
+  featured?: boolean;
 }) {
   return (
-    <article className="group flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]">
-      <span className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+    <article
+      className={
+        featured
+          ? "group relative flex flex-col rounded-xl border border-accent/50 bg-card p-7 shadow-[0_15px_45px_-25px_rgba(20,40,80,0.45)] ring-1 ring-accent/20 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_20px_55px_-25px_rgba(20,40,80,0.55)]"
+          : "group flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+      }
+    >
+      {featured && (
+        <span className="absolute -top-3 left-6 rounded-full bg-accent px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-accent-foreground">
+          Recommended
+        </span>
+      )}
+      <span
+        className={
+          featured
+            ? "inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent text-accent-foreground"
+            : "inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent"
+        }
+      >
         {icon}
       </span>
       <span className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
