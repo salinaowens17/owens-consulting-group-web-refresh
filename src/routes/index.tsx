@@ -75,20 +75,37 @@ function HomePage() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <HighlightCard
+            icon={<Monitor className="h-5 w-5" />}
+            eyebrow="Most accessible"
+            title="Online Courses"
+            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses — available online so you can train from anywhere in Texas, on your schedule."
+            to="/schedules"
+            cta="View online schedule"
+            featured
+          />
           <HighlightCard
             icon={<GraduationCap className="h-5 w-5" />}
             eyebrow="In-person training"
-            title="2026 schedule is here"
-            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses delivered in person across Texas."
-            to="/courses"
-            cta="View courses"
+            title="In-person Training"
+            body="Scheduled in-person classes across Texas covering MSW A & B supervisor licensing, waste screening, and specialized medical waste."
+            to="/schedules"
+            cta="View in-person schedule"
+          />
+          <HighlightCard
+            icon={<Users className="h-5 w-5" />}
+            eyebrow="On-site & custom"
+            title="Custom, site-specific, in-person classes"
+            body="Need training delivered at your facility? We schedule custom, site-specific in-person classes built around your team's operations and SOP."
+            to="/contact"
+            cta="Contact us"
           />
           <HighlightCard
             icon={<BookOpen className="h-5 w-5" />}
-            eyebrow="Course #341"
-            title="Waste Screening — TDLR continuing ed"
-            body="An 8-hour course designed for waste acceptance, screening, and load inspection personnel. Approved by TDLR for Code Enforcement Officers."
+            eyebrow="TDLR Course #341"
+            title="TDLR Code Enforcement Officer License CEUs — Waste Screening"
+            body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits, designed for waste acceptance, screening, and load inspection personnel."
             to="/courses"
             cta="Course details"
           />
