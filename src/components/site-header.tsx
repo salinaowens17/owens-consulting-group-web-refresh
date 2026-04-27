@@ -6,8 +6,8 @@ import ocgLogo from "@/assets/ocg-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/courses", label: "Courses" },
-  { to: "/schedules", label: "Schedules" },
+  { to: "/courses", label: "Courses Offered" },
+  { to: "/schedules", label: "Course Schedules" },
   { to: "/services", label: "Services" },
   { to: "/team", label: "Team" },
   { to: "/resources", label: "Resources" },
