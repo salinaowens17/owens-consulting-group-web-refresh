@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ocgLogo from "@/assets/ocg-logo.svg";
+import ocgLogo from "@/assets/ocg-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -26,7 +26,7 @@ export function SiteHeader() {
             alt="Owens Consulting Group"
             width={60}
             height={50}
-            className="h-12 w-auto"
+            className="h-12 w-auto object-contain"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-base font-semibold text-primary">

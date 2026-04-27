@@ -1,22 +1,18 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, ShieldCheck } from "lucide-react";
-import ocgLogo from "@/assets/ocg-logo.svg";
-import certWbe from "@/assets/cert-wbe.png";
-import certTdlr from "@/assets/cert-tdlr.png";
-import certAipg from "@/assets/cert-aipg.png";
-import certIhmm from "@/assets/cert-ihmm.png";
-import certNrep from "@/assets/cert-nrep.png";
-import certHouston from "@/assets/cert-houston.png";
-import certHub from "@/assets/cert-hub.png";
+import ocgLogo from "@/assets/ocg-logo.png";
+import certWbe from "@/assets/cert-wbe.gif";
+import certHoustonSeal from "@/assets/cert-houston-seal.gif";
+import certHoustonObo from "@/assets/cert-houston-obo.jpeg";
+import certTdlr from "@/assets/cert-tdlr.jpg";
+import certSam from "@/assets/cert-sam.jpg";
 
 const certifications = [
   { src: certWbe, alt: "Certified Women's Business Enterprise" },
-  { src: certTdlr, alt: "Texas TDLR Approved" },
-  { src: certAipg, alt: "American Institute of Professional Geologists" },
-  { src: certIhmm, alt: "Institute of Hazardous Materials Management" },
-  { src: certNrep, alt: "National Registry of Environmental Professionals" },
-  { src: certHouston, alt: "City of Houston" },
-  { src: certHub, alt: "Texas Historically Underutilized Business" },
+  { src: certTdlr, alt: "Texas Department of Licensing and Regulation" },
+  { src: certHoustonSeal, alt: "City of Houston" },
+  { src: certHoustonObo, alt: "City of Houston Mayor's Office of Business Opportunity" },
+  { src: certSam, alt: "System for Award Management" },
 ];
 
 export function SiteFooter() {
@@ -24,11 +20,11 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-primary text-primary-foreground">
       {/* Certifications strip */}
       <div className="border-b border-primary-foreground/10 bg-primary-foreground">
-        <div className="mx-auto max-w-6xl px-5 py-10 md:px-8">
+        <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
           <p className="text-center font-serif text-xs font-semibold uppercase tracking-[0.22em] text-primary/70">
             Certifications & Affiliations
           </p>
-          <ul className="mt-6 grid grid-cols-3 items-center gap-6 sm:grid-cols-4 md:grid-cols-7">
+          <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-5">
             {certifications.map((cert) => (
               <li key={cert.alt} className="flex items-center justify-center">
                 <img
@@ -36,9 +32,9 @@ export function SiteFooter() {
                   alt={cert.alt}
                   title={cert.alt}
                   loading="lazy"
-                  width={120}
-                  height={120}
-                  className="h-16 w-auto object-contain transition-opacity hover:opacity-100 md:h-20"
+                  width={240}
+                  height={240}
+                  className="h-32 w-auto object-contain transition-opacity hover:opacity-100 md:h-40"
                 />
               </li>
             ))}
@@ -50,7 +46,7 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary-foreground p-1.5">
-              <img src={ocgLogo} alt="Owens Consulting Group" className="h-full w-auto" />
+              <img src={ocgLogo} alt="Owens Consulting Group" className="h-full w-auto object-contain" />
             </span>
             <div>
               <p className="font-serif text-lg font-semibold">Owens Consulting Group</p>
