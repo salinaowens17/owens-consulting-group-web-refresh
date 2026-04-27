@@ -22,26 +22,36 @@ export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
 });
 
-const externalLinks = [
+const licensingLinks = [
   {
-    label: "TCEQ — Texas Commission on Environmental Quality",
-    href: "https://www.tceq.texas.gov/",
-    note: "Texas environmental regulatory agency",
+    label: "Renew License",
+    href: "https://www.texasonline.state.tx.us/NASApp/rap/apps/license/jsp/eng/welcome.jsp?agency=86&instance=tceq_ind",
+    note: "Renew a current MSW License through Texas.gov",
   },
   {
-    label: "TDLR — Texas Department of Licensing and Regulation",
-    href: "https://www.tdlr.texas.gov/",
-    note: "Code Enforcement Officer continuing education",
+    label: "TCEQ Licensing",
+    href: "https://www.tceq.texas.gov/licensing",
+    note: "TCEQ general licensing information — obtaining and renewing an MSW License",
   },
   {
-    label: "OSHA Hazard Communication — 29 CFR 1910.1200",
-    href: "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200",
-    note: "Standard for chemical inventory & SDS compliance",
+    label: "License Exam Results",
+    href: "https://www2.tceq.texas.gov/lic_dpa/index.cfm?fuseaction=oler.searchexam",
+    note: "Look up TCEQ occupational licensing exam results",
   },
   {
-    label: "30 TAC §330.127 — Recordkeeping & training",
-    href: "https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=30&pt=1&ch=330&rl=127",
-    note: "Texas regulation referenced for SOP training",
+    label: "Individual License Search",
+    href: "https://www2.tceq.texas.gov/lic_dpa/index.cfm?fuseaction=licall.searchindiv",
+    note: "Search for an individual TCEQ license holder",
+  },
+  {
+    label: "OLEA — On-Line Electronic Application",
+    href: "https://www.tceq.texas.gov/licensing/olea",
+    note: "Apply for or renew a TCEQ occupational license online",
+  },
+  {
+    label: "Register for an Exam",
+    href: "https://www.tceq.texas.gov/licensing/exams/cbt_occ_lic.html",
+    note: "Schedule a computer-based TCEQ occupational licensing exam",
   },
 ];
 
