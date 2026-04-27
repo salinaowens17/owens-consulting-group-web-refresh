@@ -132,7 +132,7 @@ export function SiteFooter() {
             >
               Lovable
             </a>{" "}
-            by Searching Creative Co, Texas, USA
+            by Searching Creative Co. Texas, USA
           </p>
         </div>
       </div>
