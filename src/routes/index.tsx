@@ -128,11 +128,11 @@ function HomePage() {
               What we do
             </span>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
-              Two practices. One standard of care.
+              Training & compliance support
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
               We pair regulatory training with hands-on environmental compliance support so
-              your team can earn — and keep — the licenses your operations depend on.
+              your team can earn and maintain licenses your operations depend on.
             </p>
           </div>
 
