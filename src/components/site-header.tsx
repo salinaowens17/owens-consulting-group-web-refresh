@@ -26,7 +26,7 @@ export function SiteHeader() {
             alt="Owens Consulting Group"
             width={60}
             height={50}
-            className="h-12 w-auto"
+            className="h-12 w-auto object-contain"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-base font-semibold text-primary">
