@@ -121,6 +121,20 @@ export function SiteFooter() {
           <p>© {new Date().getFullYear()} Owens Consulting Group. All rights reserved.</p>
           <p>TCEQ Provider #782 · TDLR Approved Course Provider</p>
         </div>
+        <div className="mx-auto max-w-6xl px-5 pb-6 text-center text-[11px] text-primary-foreground/50 md:px-8">
+          <p>
+            Website designed on{" "}
+            <a
+              href="https://lovable.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/70 underline-offset-4 hover:text-accent hover:underline"
+            >
+              Lovable
+            </a>{" "}
+            by Searching Creative Co, Texas, USA
+          </p>
+        </div>
       </div>
     </footer>
   );
