@@ -125,7 +125,7 @@ function CoursesAndServicesPage() {
             TCEQ-approved training & environmental compliance support
           </span>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Courses &amp; Services for Texas environmental supervisors and operators.
+            Courses & services for Texas environmental supervisors and operators.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             TCEQ-approved supervisor licensing courses plus hands-on, on-site environmental
