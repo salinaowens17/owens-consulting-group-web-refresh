@@ -11,6 +11,10 @@ import {
   ShieldPlus,
 } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
+import {
+  IN_PERSON_REGISTRATION_PDF,
+  ONLINE_REGISTRATION_PDF,
+} from "@/lib/registration-forms";
 
 export const Route = createFileRoute("/courses")({
   head: () => ({
@@ -134,12 +138,20 @@ function CoursesAndServicesPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="https://storage.googleapis.com/wzukusers/user-34981497/documents/c9a456e7d67a4c91a9227d1fb85a6598/05-2026%20Registration%20Form.pdf"
+              href={ONLINE_REGISTRATION_PDF}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
             >
-              <Download className="h-4 w-4" /> Course registration form (PDF)
+              <Download className="h-4 w-4" /> Online course registration (PDF)
+            </a>
+            <a
+              href={IN_PERSON_REGISTRATION_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+            >
+              <Download className="h-4 w-4" /> In-person course registration (PDF)
             </a>
             <Link
               to="/contact"
