@@ -159,22 +159,22 @@ function SchedulesPage() {
       </section>
 
       <ScheduleSection
-        eyebrow="In-person"
-        icon={<Users className="h-5 w-5" />}
-        title="In-person classes across Texas"
-        description="Hands-on instruction at venues in Houston, Kingwood, Austin, Dallas, and San Antonio."
-        sessions={inPersonSessions}
+        eyebrow="Online · most popular"
+        icon={<Monitor className="h-5 w-5" />}
+        title="Online & live virtual sessions"
+        description="Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor licensing classes — our most accessible option, with the highest enrollment."
+        sessions={onlineSessions}
         accent="primary"
       />
 
       <div className="border-t border-border" />
 
       <ScheduleSection
-        eyebrow="Online"
-        icon={<Monitor className="h-5 w-5" />}
-        title="Online & live virtual sessions"
-        description="Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor licensing classes."
-        sessions={onlineSessions}
+        eyebrow="In-person"
+        icon={<Users className="h-5 w-5" />}
+        title="In-person classes across Texas"
+        description="Hands-on instruction at venues in Houston, Kingwood, Austin, Dallas, and San Antonio."
+        sessions={inPersonSessions}
         accent="accent"
       />
 
