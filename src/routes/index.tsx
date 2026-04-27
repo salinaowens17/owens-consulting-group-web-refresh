@@ -64,31 +64,8 @@ function HomePage() {
           </div>
         </div>
       </section>
-
-
-      {/* Credential strip */}
-      <section className="border-b border-border bg-background">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-5 pb-4 pt-10 md:grid-cols-4 md:px-8">
-          {[
-            { label: "TCEQ Provider", value: "#782" },
-            { label: "TDLR Approved", value: "Course #341" },
-            { label: "OSHA Compliant", value: "29 CFR 1910.1200(g)" },
-            { label: "Texas Regulation", value: "30 TAC 330.127" },
-          ].map((c) => (
-            <div key={c.label} className="flex flex-col">
-              <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                {c.label}
-              </span>
-              <span className="mt-1 font-serif text-xl font-semibold text-primary">
-                {c.value}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Highlights */}
-      <section className="mx-auto max-w-6xl px-5 pb-20 pt-10 md:px-8 md:pt-12">
+      <section className="mx-auto max-w-6xl px-5 pb-20 pt-14 md:px-8 md:pt-16">
         <div className="max-w-2xl">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
             Featured
