@@ -35,32 +35,43 @@ function HomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--color-primary)_0%,transparent_55%),radial-gradient(circle_at_80%_70%,var(--color-accent)_0%,transparent_50%)]" />
         </div>
         <div className="mx-auto max-w-6xl px-5 py-14 sm:py-16 md:px-8 md:py-20 lg:py-24">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
-              <Sprout className="h-3.5 w-3.5" />
-              Texas-based · TCEQ Provider #782
-            </span>
-            <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
-              TCEQ-approved training provider in Texas.
-            </h1>
-            <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
-              From MSW supervisor licensing and waste screening to chemical inventory
-              audits and site-specific SOP training, Owens Consulting Group helps Texas
-              facilities and professionals stay licensed, compliant, and prepared.
-            </p>
-            <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
-              <Link
-                to="/courses"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-              >
-                View courses <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
-              >
-                Contact us
-              </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
+                <Sprout className="h-3.5 w-3.5" />
+                Texas-based · TCEQ Provider #782
+              </span>
+              <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
+                TCEQ-approved training provider in Texas.
+              </h1>
+              <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
+                From MSW supervisor licensing and waste screening to chemical inventory
+                audits and site-specific SOP training, Owens Consulting Group helps Texas
+                facilities and professionals stay licensed, compliant, and prepared.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
+                <Link
+                  to="/courses"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                >
+                  View courses <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
+                >
+                  Contact us
+                </Link>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,var(--color-accent)_0%,transparent_60%)] opacity-20" aria-hidden />
+              <img
+                src={heroTeaching}
+                alt="David Dugger leading a TCEQ-approved training session for a class of Texas environmental professionals."
+                className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
