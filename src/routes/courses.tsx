@@ -45,7 +45,7 @@ const courses = [
     body: "This TCEQ-approved 24-hour course is designed for supervisors seeking an MSW A License or renewal hours to renew a current MSW license.",
   },
   {
-    code: "TCEQ #514",
+    code: "TCEQ Course #514",
     title: "MSW B Supervisor Licensing",
     duration: "24 hours",
     audience:
@@ -53,7 +53,7 @@ const courses = [
     body: "This TCEQ-approved 24-hour course is designed for supervisors of MSW transfer stations; non-hazardous liquid waste processing facilities; Material Recycling Facilities (MRFs); and Type IX Energy Recovery facilities.",
   },
   {
-    code: "TCEQ #341",
+    code: "TCEQ Course #341",
     title: "Waste Screening",
     duration: "8 hours",
     audience:
@@ -62,7 +62,7 @@ const courses = [
     badges: ["SOP annual training", "TDLR continuing ed"],
   },
   {
-    code: "TCEQ #1390",
+    code: "TCEQ Course #1390",
     title: "Specialized Medical Waste",
     duration: "8 hours",
     audience:
