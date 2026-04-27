@@ -33,8 +33,8 @@ function HomePage() {
         <div className="absolute inset-0 -z-10 opacity-[0.04]" aria-hidden>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--color-primary)_0%,transparent_55%),radial-gradient(circle_at_80%_70%,var(--color-accent)_0%,transparent_50%)]" />
         </div>
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:py-16 md:grid-cols-12 md:gap-10 md:px-8 md:py-24 lg:py-28">
-          <div className="md:col-span-7">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:py-16 md:px-8 md:py-20 lg:py-24">
+          <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
               <Sprout className="h-3.5 w-3.5" />
               Texas-based · TCEQ Provider #782
@@ -62,34 +62,9 @@ function HomePage() {
               </Link>
             </div>
           </div>
-
-          <div className="md:col-span-5">
-            <div className="relative rounded-2xl border border-border bg-card p-6 shadow-[0_20px_60px_-30px_rgba(20,40,80,0.35)]">
-              <div className="flex items-center justify-between border-b border-border pb-4">
-                <p className="font-serif text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                  2026 Schedule
-                </p>
-                <span className="rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-accent">
-                  In-person
-                </span>
-              </div>
-              <p className="mt-4 font-serif text-2xl text-primary">
-                In-person TCEQ-approved classes for 2026 are now scheduled.
-              </p>
-              <p className="mt-3 text-sm text-muted-foreground">
-                Including Waste Screening (Course #341), TDLR-approved continuing education
-                for Code Enforcement Officers.
-              </p>
-              <Link
-                to="/schedules"
-                className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
-              >
-                See upcoming courses <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
+
 
       {/* Credential strip */}
       <section className="border-b border-border bg-background">
