@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Download, FileText, ShieldAlert } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
+import {
+  IN_PERSON_REGISTRATION_PDF,
+  ONLINE_REGISTRATION_PDF,
+} from "@/lib/registration-forms";
 
 export const Route = createFileRoute("/resources")({
   head: () => ({
@@ -112,22 +116,32 @@ function ResourcesPage() {
                   Registration
                 </p>
                 <h2 className="font-serif text-xl font-semibold text-primary">
-                  Course Registration Form
+                  Course Registration Forms
                 </h2>
               </div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Download the current course registration form to enroll in upcoming TCEQ-approved
-              in-person or online courses.
+              Download the appropriate registration form for the course format you'd like
+              to enroll in.
             </p>
-            <a
-              href="https://storage.googleapis.com/wzukusers/user-34981497/documents/c9a456e7d67a4c91a9227d1fb85a6598/05-2026%20Registration%20Form.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
-            >
-              <Download className="h-4 w-4" /> Download PDF
-            </a>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href={ONLINE_REGISTRATION_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
+              >
+                <Download className="h-4 w-4" /> Online course registration (PDF)
+              </a>
+              <a
+                href={IN_PERSON_REGISTRATION_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
+              >
+                <Download className="h-4 w-4" /> In-person course registration (PDF)
+              </a>
+            </div>
           </article>
         </div>
 
