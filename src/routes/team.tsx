@@ -39,6 +39,7 @@ type Member = {
   credentials: string;
   title: string;
   photo?: string;
+  photoPosition?: string;
   badges?: Credential[];
 };
 
@@ -55,6 +56,7 @@ const team: Member[] = [
     credentials: "Solid Waste Industry Expert",
     title: "Senior Instructor",
     photo: teamErasmo,
+    photoPosition: "center 30%",
   },
   {
     name: "David Dugger",
@@ -109,6 +111,7 @@ function TeamPage() {
                       alt={`Portrait of ${member.name}`}
                       loading="lazy"
                       className="h-full w-full object-cover"
+                      style={member.photoPosition ? { objectPosition: member.photoPosition } : undefined}
                     />
                   </div>
                 ) : (
