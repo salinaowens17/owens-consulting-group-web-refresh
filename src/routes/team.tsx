@@ -91,7 +91,7 @@ function TeamPage() {
       <section className="border-b border-border/70 bg-surface">
         <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
           <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Our Team
+            Meet the Team
           </p>
           <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
             Decades of regulatory and operational expertise.
