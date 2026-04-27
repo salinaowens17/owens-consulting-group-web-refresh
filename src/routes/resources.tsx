@@ -133,13 +133,14 @@ function ResourcesPage() {
 
         <div className="mt-14">
           <h2 className="font-serif text-2xl font-semibold text-primary">
-            Regulatory references
+            TCEQ licensing resources
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            External links to the agencies and regulations our courses and services align with.
+            General information on obtaining and renewing an MSW License, plus direct links to
+            TCEQ exam registration, license lookup, and the On-Line Electronic Application (OLEA).
           </p>
           <ul className="mt-6 divide-y divide-border rounded-xl border border-border bg-card">
-            {externalLinks.map((l) => (
+            {licensingLinks.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
