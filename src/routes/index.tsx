@@ -54,7 +54,7 @@ function HomePage() {
                   to="/courses"
                   className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
                 >
-                  View courses <ArrowRight className="h-4 w-4" />
+                  View courses & services <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/contact"
