@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, Mail, ShieldCheck, Sprout } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, Mail, Monitor, ShieldCheck, Sprout, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/")({
