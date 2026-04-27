@@ -80,7 +80,7 @@ function HomePage() {
             icon={<Monitor className="h-5 w-5" />}
             eyebrow="Most accessible"
             title="Online Courses"
-            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses — available online so you can train from anywhere in Texas, on your schedule."
+            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses."
             to="/schedules"
             cta="View online schedule"
             featured
@@ -105,7 +105,7 @@ function HomePage() {
             icon={<BookOpen className="h-5 w-5" />}
             eyebrow="TDLR Course #341"
             title="TDLR Code Enforcement Officer License CEUs — Waste Screening"
-            body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits, designed for waste acceptance, screening, and load inspection personnel."
+            body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits."
             to="/courses"
             cta="Course details"
           />
