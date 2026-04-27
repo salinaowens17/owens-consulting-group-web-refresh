@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, Mail, Monitor, ShieldCheck, Sprout, Users } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, HeartPulse, Mail, Monitor, ShieldCheck, Sprout, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/")({
@@ -75,7 +75,7 @@ function HomePage() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <HighlightCard
             icon={<Monitor className="h-5 w-5" />}
             eyebrow="Most accessible"
@@ -116,6 +116,14 @@ function HomePage() {
             body="Comprehensive review of on-site chemicals with current Safety Data Sheets in accordance with OSHA Standard 29 CFR 1910.1200(g)."
             to="/courses"
             cta="Request an audit"
+          />
+          <HighlightCard
+            icon={<HeartPulse className="h-5 w-5" />}
+            eyebrow="Certification"
+            title="First Aid / CPR / AED"
+            body="Nationally recognized First Aid, CPR, and AED certification for adults, children, and infants. Includes a 2-year certification card upon successful completion."
+            to="/courses"
+            cta="Course details"
           />
         </div>
       </section>
