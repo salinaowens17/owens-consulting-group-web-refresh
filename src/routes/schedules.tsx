@@ -129,7 +129,7 @@ function SchedulesPage() {
             2026 schedule
           </span>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Upcoming course dates — in person and online.
+            Upcoming course dates — online and in person.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Browse upcoming TCEQ-approved sessions. Reserve your seat by downloading the
@@ -159,22 +159,22 @@ function SchedulesPage() {
       </section>
 
       <ScheduleSection
-        eyebrow="In-person"
-        icon={<Users className="h-5 w-5" />}
-        title="In-person classes across Texas"
-        description="Hands-on instruction at venues in Houston, Kingwood, Austin, Dallas, and San Antonio."
-        sessions={inPersonSessions}
+        eyebrow="Online · most popular"
+        icon={<Monitor className="h-5 w-5" />}
+        title="Online & live virtual sessions"
+        description="Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor licensing classes — our most accessible option, with the highest enrollment."
+        sessions={onlineSessions}
         accent="primary"
       />
 
       <div className="border-t border-border" />
 
       <ScheduleSection
-        eyebrow="Online"
-        icon={<Monitor className="h-5 w-5" />}
-        title="Online & live virtual sessions"
-        description="Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor licensing classes."
-        sessions={onlineSessions}
+        eyebrow="In-person"
+        icon={<Users className="h-5 w-5" />}
+        title="In-person classes across Texas"
+        description="Hands-on instruction at venues in Houston, Kingwood, Austin, Dallas, and San Antonio."
+        sessions={inPersonSessions}
         accent="accent"
       />
 
