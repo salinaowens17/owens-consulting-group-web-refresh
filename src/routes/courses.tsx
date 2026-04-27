@@ -191,7 +191,7 @@ function CoursesAndServicesPage() {
               <img
                 src={landfillAerial}
                 alt="Aerial view of a municipal solid waste landfill with a bulldozer working the active face — the type of operation supported by TCEQ-approved supervisor training and environmental compliance services."
-                className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
+                className="aspect-[2/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
                 loading="eager"
               />
             </div>
