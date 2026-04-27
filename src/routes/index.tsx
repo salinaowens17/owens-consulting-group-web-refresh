@@ -88,7 +88,7 @@ function HomePage() {
       </section>
 
       {/* Highlights */}
-      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+      <section className="mx-auto max-w-6xl px-5 pb-20 pt-10 md:px-8 md:pt-12">
         <div className="max-w-2xl">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
             Featured
