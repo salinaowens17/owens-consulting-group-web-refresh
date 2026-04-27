@@ -88,36 +88,6 @@ const team: Member[] = [
 function TeamPage() {
   return (
     <SiteShell>
-      <section className="border-b border-border/70 bg-surface">
-        <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
-          <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Meet the Team
-          </p>
-          <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Decades of regulatory and operational expertise.
-          </h1>
-          <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>
-              OCG is a TCEQ-approved training provider of MSW courses for Solid Waste Supervisors
-              and associated staff.
-            </p>
-            <p className="font-medium text-foreground">
-              Each of our instructors has over 30 years of experience in the solid waste industry
-              with deep regulatory knowledge and practical experience.
-            </p>
-            <p>
-              Our courses cover background history on rule-making, obtaining and maintaining
-              compliance with commission rules and site-specific authorization documents, as well
-              as technical and operational expertise.
-            </p>
-            <p>
-              OCG takes great pride in ensuring that our materials reflect the most recent rules,
-              regulations, policies and procedures of the TCEQ and industry practices.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-background">
         <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -164,6 +134,36 @@ function TeamPage() {
                 ) : null}
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border/70 bg-surface">
+        <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
+          <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
+            Meet the Team
+          </p>
+          <h2 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+            Decades of regulatory and operational expertise.
+          </h2>
+          <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p>
+              OCG is a TCEQ-approved training provider of MSW courses for Solid Waste Supervisors
+              and associated staff.
+            </p>
+            <p className="font-medium text-foreground">
+              Each of our instructors has over 30 years of experience in the solid waste industry
+              with deep regulatory knowledge and practical experience.
+            </p>
+            <p>
+              Our courses cover background history on rule-making, obtaining and maintaining
+              compliance with commission rules and site-specific authorization documents, as well
+              as technical and operational expertise.
+            </p>
+            <p>
+              OCG takes great pride in ensuring that our materials reflect the most recent rules,
+              regulations, policies and procedures of the TCEQ and industry practices.
+            </p>
           </div>
         </div>
       </section>
