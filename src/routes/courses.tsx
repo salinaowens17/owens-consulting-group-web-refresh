@@ -1,25 +1,35 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Clock, Download, FileText } from "lucide-react";
+import {
+  ArrowRight,
+  ClipboardCheck,
+  Clock,
+  Download,
+  FileSearch,
+  FileText,
+} from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/courses")({
   head: () => ({
     meta: [
-      { title: "TCEQ-Approved Courses — Owens Consulting Group" },
+      { title: "Courses & Services — Owens Consulting Group" },
       {
         name: "description",
         content:
-          "TCEQ-approved courses: MSW A Supervisor Licensing #513, MSW B #514, Waste Screening #341, and Specialized Medical Waste #1390.",
+          "TCEQ-approved courses (MSW A #513, MSW B #514, Waste Screening #341, Specialized Medical Waste #1390) plus on-site SOP training and chemical inventory audits.",
       },
-      { property: "og:title", content: "TCEQ-Approved Courses — Owens Consulting Group" },
+      {
+        property: "og:title",
+        content: "Courses & Services — Owens Consulting Group",
+      },
       {
         property: "og:description",
         content:
-          "Supervisor licensing, waste screening, and specialized medical waste courses for Texas.",
+          "Supervisor licensing, waste screening, specialized medical waste courses, on-site SOP training, and chemical inventory audits for Texas.",
       },
     ],
   }),
-  component: CoursesPage,
+  component: CoursesAndServicesPage,
 });
 
 const courses = [
@@ -27,7 +37,8 @@ const courses = [
     code: "TCEQ #513",
     title: "MSW A Supervisor Licensing",
     duration: "24 hours",
-    audience: "Supervisors of Type I, IAE, IV and Type IVAE landfills, and Type IX landfill mining operations",
+    audience:
+      "Supervisors of Type I, IAE, IV and Type IVAE landfills, and Type IX landfill mining operations",
     body: "This TCEQ-approved 24-hour course is designed for supervisors seeking an MSW A License or renewal hours to renew a current MSW license.",
   },
   {
@@ -57,20 +68,38 @@ const courses = [
   },
 ];
 
-function CoursesPage() {
+const services = [
+  {
+    icon: <FileSearch className="h-5 w-5" />,
+    eyebrow: "On-site",
+    title: "Site-Specific SOP Training",
+    body: "Site Operating Plan (SOP) training — annual & refresher — designed to meet the requirements in 30 TAC 330.127. Delivered on-site for your team and tailored to your facility's operating plan.",
+    cite: "Meets 30 TAC 330.127",
+  },
+  {
+    icon: <ClipboardCheck className="h-5 w-5" />,
+    eyebrow: "Audit & review",
+    title: "Chemical Inventory Audits",
+    body: "Professional review and audit of all chemicals maintained on-site, paired with the most current Safety Data Sheets (SDSs). Comprehensive and compliant with OSHA Standard 29 CFR 1910.1200(g).",
+    cite: "OSHA 29 CFR 1910.1200(g)",
+  },
+];
+
+function CoursesAndServicesPage() {
   return (
     <SiteShell>
       <section className="border-b border-border bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            TCEQ-approved training provider
+            TCEQ-approved training & environmental compliance support
           </span>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Courses for Texas environmental supervisors and operators.
+            Courses &amp; Services for Texas environmental supervisors and operators.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            All of our courses meet the requirements to renew a current MSW License. In-person
-            and online schedules are available throughout 2026.
+            TCEQ-approved supervisor licensing courses plus hands-on, on-site environmental
+            compliance services. All of our courses meet the requirements to renew a current
+            MSW License.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -88,11 +117,38 @@ function CoursesPage() {
               Ask about scheduling <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+          <nav className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+            <a
+              href="#courses"
+              className="text-accent underline-offset-4 hover:underline"
+            >
+              TCEQ-approved courses
+            </a>
+            <a
+              href="#services"
+              className="text-accent underline-offset-4 hover:underline"
+            >
+              Environmental compliance services
+            </a>
+          </nav>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
-        <div className="grid gap-6 md:grid-cols-2">
+      {/* Courses */}
+      <section id="courses" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
+        <div className="max-w-2xl">
+          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+            Courses
+          </span>
+          <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+            TCEQ-approved courses
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            In-person and online schedules are available throughout 2026.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {courses.map((c) => (
             <article
               key={c.code}
@@ -106,9 +162,9 @@ function CoursesPage() {
                   <Clock className="h-4 w-4" /> {c.duration}
                 </span>
               </div>
-              <h2 className="mt-5 font-serif text-2xl font-semibold text-primary">
+              <h3 className="mt-5 font-serif text-2xl font-semibold text-primary">
                 {c.title}
-              </h2>
+              </h3>
               <p className="mt-3 text-sm font-medium text-foreground/80">{c.audience}</p>
               <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                 {c.body}
@@ -137,7 +193,58 @@ function CoursesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
+      {/* Services */}
+      <section id="services" className="border-y border-border bg-surface">
+        <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
+          <div className="max-w-2xl">
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Services
+            </span>
+            <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+              Environmental compliance services
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Beyond training, we partner with Texas operators on the everyday work of staying
+              compliant — from site-specific SOP training to comprehensive chemical inventory
+              audits.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {services.map((s) => (
+              <article
+                key={s.title}
+                className="flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+              >
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-accent/10 text-accent">
+                  {s.icon}
+                </span>
+                <span className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+                  {s.eyebrow}
+                </span>
+                <h3 className="mt-2 font-serif text-xl font-semibold text-primary">
+                  {s.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+                <p className="mt-5 border-t border-border pt-4 text-[11px] font-medium uppercase tracking-wider text-gold">
+                  {s.cite}
+                </p>
+                <a
+                  href="mailto:owenscgtx@gmail.com?subject=Service%20inquiry"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
+                >
+                  Request details <ArrowRight className="h-4 w-4" />
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Schedules CTA */}
+      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <div className="grid gap-4 rounded-2xl border border-border bg-surface p-8 md:grid-cols-2 md:gap-8 md:p-10">
           <Link
             to="/schedules"
@@ -177,6 +284,30 @@ function CoursesPage() {
               </span>
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* Tailored CTA */}
+      <section className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
+        <div className="rounded-2xl border border-border bg-primary p-10 text-primary-foreground md:p-14">
+          <div className="grid gap-8 md:grid-cols-[2fr_1fr] md:items-center">
+            <div>
+              <h2 className="font-serif text-3xl font-semibold md:text-4xl">
+                Need something tailored?
+              </h2>
+              <p className="mt-3 max-w-xl text-primary-foreground/75">
+                We regularly customize on-site SOP training and chemical inventory audits for
+                facility teams across Texas. Email us with the details and we&rsquo;ll get back
+                to you with options.
+              </p>
+            </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90 md:justify-self-end"
+            >
+              Contact us <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </SiteShell>
