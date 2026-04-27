@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, Mail, ShieldCheck, Sprout } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, Mail, Monitor, ShieldCheck, Sprout, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/")({
@@ -75,20 +75,37 @@ function HomePage() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <HighlightCard
+            icon={<Monitor className="h-5 w-5" />}
+            eyebrow="Most accessible"
+            title="Online Courses"
+            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses — available online so you can train from anywhere in Texas, on your schedule."
+            to="/schedules"
+            cta="View online schedule"
+            featured
+          />
           <HighlightCard
             icon={<GraduationCap className="h-5 w-5" />}
             eyebrow="In-person training"
-            title="2026 schedule is here"
-            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses delivered in person across Texas."
-            to="/courses"
-            cta="View courses"
+            title="In-person Training"
+            body="Scheduled in-person classes across Texas covering MSW A & B supervisor licensing, waste screening, and specialized medical waste."
+            to="/schedules"
+            cta="View in-person schedule"
+          />
+          <HighlightCard
+            icon={<Users className="h-5 w-5" />}
+            eyebrow="On-site & custom"
+            title="Custom, site-specific, in-person classes"
+            body="Need training delivered at your facility? We schedule custom, site-specific in-person classes built around your team's operations and SOP."
+            to="/contact"
+            cta="Contact us"
           />
           <HighlightCard
             icon={<BookOpen className="h-5 w-5" />}
-            eyebrow="Course #341"
-            title="Waste Screening — TDLR continuing ed"
-            body="An 8-hour course designed for waste acceptance, screening, and load inspection personnel. Approved by TDLR for Code Enforcement Officers."
+            eyebrow="TDLR Course #341"
+            title="TDLR Code Enforcement Officer License CEUs — Waste Screening"
+            body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits, designed for waste acceptance, screening, and load inspection personnel."
             to="/courses"
             cta="Course details"
           />
@@ -177,17 +194,36 @@ function HighlightCard({
   body,
   to,
   cta,
+  featured,
 }: {
   icon: React.ReactNode;
   eyebrow: string;
   title: string;
   body: string;
-  to: "/courses" | "/resources" | "/contact";
+  to: "/courses" | "/resources" | "/contact" | "/schedules";
   cta: string;
+  featured?: boolean;
 }) {
   return (
-    <article className="group flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]">
-      <span className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+    <article
+      className={
+        featured
+          ? "group relative flex flex-col rounded-xl border border-accent/50 bg-card p-7 shadow-[0_15px_45px_-25px_rgba(20,40,80,0.45)] ring-1 ring-accent/20 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_20px_55px_-25px_rgba(20,40,80,0.55)]"
+          : "group flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+      }
+    >
+      {featured && (
+        <span className="absolute -top-3 left-6 rounded-full bg-accent px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-accent-foreground">
+          Recommended
+        </span>
+      )}
+      <span
+        className={
+          featured
+            ? "inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent text-accent-foreground"
+            : "inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent"
+        }
+      >
         {icon}
       </span>
       <span className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
