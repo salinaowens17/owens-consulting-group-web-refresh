@@ -128,39 +128,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* What we do */}
-      <section className="border-y border-border bg-surface">
-        <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 md:grid-cols-2 md:px-8">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-              What we do
-            </span>
-            <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
-              Training & compliance support
-            </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
-              We pair regulatory training with hands-on environmental compliance support so
-              your team can earn and maintain licenses your operations depend on.
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <PracticeRow
-              icon={<GraduationCap className="h-5 w-5" />}
-              title="TCEQ-approved training"
-              body="MSW A & B supervisor licensing, waste screening, and specialized medical waste courses. All courses meet renewal requirements."
-              to="/courses"
-            />
-            <PracticeRow
-              icon={<ShieldCheck className="h-5 w-5" />}
-              title="Environmental compliance support"
-              body="Site-specific SOP training and chemical inventory audits aligned with OSHA and TCEQ requirements."
-              to="/courses"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Contact band */}
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <div className="overflow-hidden rounded-2xl border border-border bg-primary text-primary-foreground">
