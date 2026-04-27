@@ -15,6 +15,7 @@ import {
   IN_PERSON_REGISTRATION_PDF,
   ONLINE_REGISTRATION_PDF,
 } from "@/lib/registration-forms";
+import landfillAerial from "@/assets/landfill-aerial.jpg";
 
 export const Route = createFileRoute("/courses")({
   head: () => ({
@@ -125,61 +126,74 @@ function CoursesAndServicesPage() {
     <SiteShell>
       <section className="border-b border-border bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            TCEQ-approved training & environmental compliance support
-          </span>
-          <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Courses & services for Texas environmental supervisors and operators.
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            TCEQ-approved supervisor licensing courses plus hands-on, on-site environmental
-            compliance services. All of our courses meet the requirements to renew a current
-            MSW License.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={ONLINE_REGISTRATION_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-            >
-              <Download className="h-4 w-4" /> Online course registration (PDF)
-            </a>
-            <a
-              href={IN_PERSON_REGISTRATION_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-            >
-              <Download className="h-4 w-4" /> In-person course registration (PDF)
-            </a>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
-            >
-              Ask about scheduling <ArrowRight className="h-4 w-4" />
-            </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+            <div>
+              <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                TCEQ-approved training & environmental compliance support
+              </span>
+              <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+                Courses & services for Texas environmental supervisors and operators.
+              </h1>
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+                TCEQ-approved supervisor licensing courses plus hands-on, on-site environmental
+                compliance services. All of our courses meet the requirements to renew a current
+                MSW License.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href={ONLINE_REGISTRATION_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                >
+                  <Download className="h-4 w-4" /> Online course registration (PDF)
+                </a>
+                <a
+                  href={IN_PERSON_REGISTRATION_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                >
+                  <Download className="h-4 w-4" /> In-person course registration (PDF)
+                </a>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
+                >
+                  Ask about scheduling <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+              <nav className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+                <a
+                  href="#courses"
+                  className="text-accent underline-offset-4 hover:underline"
+                >
+                  TCEQ-approved courses
+                </a>
+                <a
+                  href="#services"
+                  className="text-accent underline-offset-4 hover:underline"
+                >
+                  Environmental compliance services
+                </a>
+                <a
+                  href="#first-aid"
+                  className="text-accent underline-offset-4 hover:underline"
+                >
+                  First Aid / CPR / AED
+                </a>
+              </nav>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,var(--color-accent)_0%,transparent_60%)] opacity-20" aria-hidden />
+              <img
+                src={landfillAerial}
+                alt="Aerial view of a municipal solid waste landfill with a bulldozer working the active face — the type of operation supported by TCEQ-approved supervisor training and environmental compliance services."
+                className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
+                loading="eager"
+              />
+            </div>
           </div>
-          <nav className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
-            <a
-              href="#courses"
-              className="text-accent underline-offset-4 hover:underline"
-            >
-              TCEQ-approved courses
-            </a>
-            <a
-              href="#services"
-              className="text-accent underline-offset-4 hover:underline"
-            >
-              Environmental compliance services
-            </a>
-            <a
-              href="#first-aid"
-              className="text-accent underline-offset-4 hover:underline"
-            >
-              First Aid / CPR / AED
-            </a>
-          </nav>
         </div>
       </section>
 
