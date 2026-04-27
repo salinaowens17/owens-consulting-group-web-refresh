@@ -97,7 +97,7 @@ function HomePage() {
             eyebrow="On-site service"
             title="Chemical Inventory Audits"
             body="Comprehensive review of on-site chemicals with current Safety Data Sheets in accordance with OSHA Standard 29 CFR 1910.1200(g)."
-            to="/services"
+            to="/courses"
             cta="Request an audit"
           />
         </div>
@@ -130,7 +130,7 @@ function HomePage() {
               icon={<ShieldCheck className="h-5 w-5" />}
               title="Environmental compliance support"
               body="Site-specific SOP training and chemical inventory audits aligned with OSHA and TCEQ requirements."
-              to="/services"
+              to="/courses"
             />
           </div>
         </div>
@@ -182,7 +182,7 @@ function HighlightCard({
   eyebrow: string;
   title: string;
   body: string;
-  to: "/courses" | "/services" | "/resources" | "/contact";
+  to: "/courses" | "/resources" | "/contact";
   cta: string;
 }) {
   return (
@@ -214,7 +214,7 @@ function PracticeRow({
   icon: React.ReactNode;
   title: string;
   body: string;
-  to: "/courses" | "/services";
+  to: "/courses";
 }) {
   return (
     <Link
