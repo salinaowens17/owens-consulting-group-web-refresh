@@ -230,8 +230,58 @@ function CoursesAndServicesPage() {
         </div>
       </section>
 
+      {/* Services */}
+      <section id="services" className="border-y border-border bg-surface">
+        <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
+          <div className="max-w-2xl">
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Services
+            </span>
+            <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+              Environmental compliance services
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Beyond training, we partner with Texas operators on the everyday work of staying
+              compliant — from site-specific SOP training to comprehensive chemical inventory
+              audits.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {services.map((s) => (
+              <article
+                key={s.title}
+                className="flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+              >
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-accent/10 text-accent">
+                  {s.icon}
+                </span>
+                <span className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+                  {s.eyebrow}
+                </span>
+                <h3 className="mt-2 font-serif text-xl font-semibold text-primary">
+                  {s.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+                <p className="mt-5 border-t border-border pt-4 text-[11px] font-medium uppercase tracking-wider text-gold">
+                  {s.cite}
+                </p>
+                <a
+                  href="mailto:owenscgtx@gmail.com?subject=Service%20inquiry"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
+                >
+                  Request details <ArrowRight className="h-4 w-4" />
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* First Aid / CPR / AED */}
-      <section id="first-aid" className="border-y border-border bg-surface">
+      <section id="first-aid" className="border-b border-border">
         <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
           <div className="max-w-2xl">
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
@@ -291,56 +341,6 @@ function CoursesAndServicesPage() {
               </a>{" "}
               for group rates and scheduling.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section id="services" className="border-y border-border bg-surface">
-        <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
-          <div className="max-w-2xl">
-            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-              Services
-            </span>
-            <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
-              Environmental compliance services
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Beyond training, we partner with Texas operators on the everyday work of staying
-              compliant — from site-specific SOP training to comprehensive chemical inventory
-              audits.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {services.map((s) => (
-              <article
-                key={s.title}
-                className="flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
-              >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-accent/10 text-accent">
-                  {s.icon}
-                </span>
-                <span className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                  {s.eyebrow}
-                </span>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-primary">
-                  {s.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {s.body}
-                </p>
-                <p className="mt-5 border-t border-border pt-4 text-[11px] font-medium uppercase tracking-wider text-gold">
-                  {s.cite}
-                </p>
-                <a
-                  href="mailto:owenscgtx@gmail.com?subject=Service%20inquiry"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
-                >
-                  Request details <ArrowRight className="h-4 w-4" />
-                </a>
-              </article>
-            ))}
           </div>
         </div>
       </section>
