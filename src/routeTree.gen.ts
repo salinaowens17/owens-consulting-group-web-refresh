@@ -13,6 +13,7 @@ import { Route as TeamRouteImport } from './routes/team'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SchedulesRouteImport } from './routes/schedules'
 import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CoursesRouteImport } from './routes/courses'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
@@ -37,6 +38,11 @@ const ResourcesRoute = ResourcesRouteImport.update({
   path: '/resources',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CoursesRoute = CoursesRouteImport.update({
   id: '/courses',
   path: '/courses',
@@ -57,6 +63,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
+  '/faq': typeof FaqRoute
   '/resources': typeof ResourcesRoute
   '/schedules': typeof SchedulesRoute
   '/services': typeof ServicesRoute
@@ -66,6 +73,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
+  '/faq': typeof FaqRoute
   '/resources': typeof ResourcesRoute
   '/schedules': typeof SchedulesRoute
   '/services': typeof ServicesRoute
@@ -76,6 +84,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
+  '/faq': typeof FaqRoute
   '/resources': typeof ResourcesRoute
   '/schedules': typeof SchedulesRoute
   '/services': typeof ServicesRoute
@@ -87,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/courses'
+    | '/faq'
     | '/resources'
     | '/schedules'
     | '/services'
@@ -96,6 +106,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/courses'
+    | '/faq'
     | '/resources'
     | '/schedules'
     | '/services'
@@ -105,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/courses'
+    | '/faq'
     | '/resources'
     | '/schedules'
     | '/services'
@@ -115,6 +127,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRoute
+  FaqRoute: typeof FaqRoute
   ResourcesRoute: typeof ResourcesRoute
   SchedulesRoute: typeof SchedulesRoute
   ServicesRoute: typeof ServicesRoute
@@ -151,6 +164,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/courses': {
       id: '/courses'
       path: '/courses'
@@ -179,6 +199,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   CoursesRoute: CoursesRoute,
+  FaqRoute: FaqRoute,
   ResourcesRoute: ResourcesRoute,
   SchedulesRoute: SchedulesRoute,
   ServicesRoute: ServicesRoute,
