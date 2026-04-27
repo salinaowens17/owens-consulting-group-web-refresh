@@ -230,6 +230,71 @@ function CoursesAndServicesPage() {
         </div>
       </section>
 
+      {/* First Aid / CPR / AED */}
+      <section id="first-aid" className="border-y border-border bg-surface">
+        <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
+          <div className="max-w-2xl">
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Safety certification
+            </span>
+            <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+              First Aid / CPR / AED training
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Owens Consulting Group offers nationally recognized First Aid, CPR, and AED
+              certification courses for workplace responders, healthcare providers, and
+              community members. Courses are delivered on-site at your facility or at a
+              scheduled location, with hands-on skills practice and a 2-year certification card
+              issued upon successful completion.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {safetyCourses.map((c) => (
+              <article
+                key={c.title}
+                className="flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-accent/10 text-accent">
+                    {c.icon}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <Clock className="h-4 w-4" /> {c.duration}
+                  </span>
+                </div>
+                <h3 className="mt-5 font-serif text-xl font-semibold text-primary">
+                  {c.title}
+                </h3>
+                <p className="mt-3 text-sm font-medium text-foreground/80">{c.audience}</p>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {c.body}
+                </p>
+                {c.cite && (
+                  <p className="mt-5 border-t border-border pt-4 text-[11px] font-medium uppercase tracking-wider text-gold">
+                    {c.cite}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-xl border border-accent/30 bg-accent/5 p-6 text-sm text-foreground">
+            <p>
+              <span className="font-semibold text-accent">Group &amp; on-site training:</span>{" "}
+              We bring First Aid/CPR/AED certification directly to your workplace. Email{" "}
+              <a
+                href="mailto:owenscgtx@gmail.com?subject=First%20Aid%2FCPR%2FAED%20training"
+                className="font-medium text-accent underline-offset-4 hover:underline"
+              >
+                owenscgtx@gmail.com
+              </a>{" "}
+              for group rates and scheduling.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section id="services" className="border-y border-border bg-surface">
         <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
