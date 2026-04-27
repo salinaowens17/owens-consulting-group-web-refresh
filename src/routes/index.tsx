@@ -35,7 +35,7 @@ function HomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--color-primary)_0%,transparent_55%),radial-gradient(circle_at_80%_70%,var(--color-accent)_0%,transparent_50%)]" />
         </div>
         <div className="mx-auto max-w-6xl px-5 py-14 sm:py-16 md:px-8 md:py-20 lg:py-24">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+          <div className="grid items-center gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
                 <Sprout className="h-3.5 w-3.5" />
