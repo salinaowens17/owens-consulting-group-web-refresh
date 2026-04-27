@@ -68,17 +68,12 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <Link to="/courses" className="text-primary-foreground/80 hover:text-accent">
-                Courses
+                Courses &amp; Services
               </Link>
             </li>
             <li>
               <Link to="/schedules" className="text-primary-foreground/80 hover:text-accent">
-                Schedules
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="text-primary-foreground/80 hover:text-accent">
-                Services
+                Course Schedules
               </Link>
             </li>
             <li>
