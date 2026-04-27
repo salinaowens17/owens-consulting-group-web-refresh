@@ -300,7 +300,7 @@ const faqs: FaqEntry[] = [
         <p>
           Apply to renew your license here:{" "}
           <a
-            href="https://www.texasonline.state.tx.us/NASApp/rap/apps/license/jsp/eng/welcome.jsp?agency=866&instance=tceq_ind"
+            href="https://www.texasonline.state.tx.us/NASApp/rap/apps/license/jsp/eng/welcome.jsp?agency=86&instance=tceq_ind"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent underline-offset-4 hover:underline break-all"
