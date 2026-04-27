@@ -156,6 +156,12 @@ function CoursesAndServicesPage() {
               TCEQ-approved courses
             </a>
             <a
+              href="#first-aid"
+              className="text-accent underline-offset-4 hover:underline"
+            >
+              First Aid / CPR / AED
+            </a>
+            <a
               href="#services"
               className="text-accent underline-offset-4 hover:underline"
             >
