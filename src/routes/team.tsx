@@ -90,7 +90,13 @@ function TeamPage() {
     <SiteShell>
       <section className="bg-background">
         <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
+            Meet the Team
+          </p>
+          <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+            Our instructors
+          </h1>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member) => (
               <article
                 key={member.name}
