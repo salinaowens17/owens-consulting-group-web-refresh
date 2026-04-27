@@ -19,7 +19,7 @@ export const Route = createFileRoute("/courses")({
       {
         name: "description",
         content:
-          "TCEQ-approved courses (MSW A #513, MSW B #514, Waste Screening #341, Specialized Medical Waste #1390) plus on-site SOP training and chemical inventory audits.",
+          "TCEQ-approved courses (MSW A #513, MSW B #514, Waste Screening #341, Specialized Medical Waste #1390), First Aid/CPR/AED certification, on-site SOP training, and chemical inventory audits.",
       },
       {
         property: "og:title",
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/courses")({
       {
         property: "og:description",
         content:
-          "Supervisor licensing, waste screening, specialized medical waste courses, on-site SOP training, and chemical inventory audits for Texas.",
+          "Supervisor licensing, waste screening, specialized medical waste, First Aid/CPR/AED certification, on-site SOP training, and chemical inventory audits for Texas.",
       },
     ],
   }),
