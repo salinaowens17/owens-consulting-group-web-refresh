@@ -37,7 +37,7 @@ export const Route = createFileRoute("/courses")({
 
 const courses = [
   {
-    code: "TCEQ #513",
+    code: "TCEQ Course #513",
     title: "MSW A Supervisor Licensing",
     duration: "24 hours",
     audience:
