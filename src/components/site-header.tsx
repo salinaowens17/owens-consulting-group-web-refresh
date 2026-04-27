@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ocgLogo from "@/assets/ocg-logo.svg";
+import ocgLogo from "@/assets/ocg-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
