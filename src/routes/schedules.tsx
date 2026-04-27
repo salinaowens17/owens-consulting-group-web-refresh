@@ -129,7 +129,7 @@ function SchedulesPage() {
             2026 schedule
           </span>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Upcoming course dates — in person and online.
+            Upcoming course dates — online and in person.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Browse upcoming TCEQ-approved sessions. Reserve your seat by downloading the
