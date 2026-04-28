@@ -295,9 +295,6 @@ function CoursesAndServicesPage() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {s.body}
                 </p>
-                <p className="mt-5 border-t border-border pt-4 text-[11px] font-medium uppercase tracking-wider text-gold">
-                  {s.cite}
-                </p>
                 <a
                   href="mailto:owenscgtx@gmail.com?subject=Service%20inquiry"
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
