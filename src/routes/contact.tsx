@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Send, ShieldCheck } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
+import hummingbirdImage from "@/assets/hummingbird.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -28,17 +29,26 @@ function ContactPage() {
   return (
     <SiteShell>
       <section className="border-b border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            Contact
-          </span>
-          <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Let's talk about your next course or audit.
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Email us to request a Chemical Inventory Audit, schedule on-site SOP training,
-            or enroll in an upcoming TCEQ-approved course.
-          </p>
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-12 md:px-8 md:py-24">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Contact
+            </span>
+            <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+              Let's talk about your next course or audit.
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Email us to request a Chemical Inventory Audit, schedule on-site SOP training,
+              or enroll in an upcoming TCEQ-approved course.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <img
+              src={hummingbirdImage}
+              alt="Hummingbird in flight beside vibrant orange flowers"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
