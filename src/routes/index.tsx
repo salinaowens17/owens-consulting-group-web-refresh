@@ -114,8 +114,8 @@ function HomePage() {
           />
           <HighlightCard
             icon={<BookOpen className="h-5 w-5" />}
-            eyebrow="TDLR Course #341"
-            title="TDLR Code Enforcement Officer License CEUs — Waste Screening"
+            eyebrow="TDLR"
+            title="TDLR Code Enforcement Officer License CEUs — Waste Screening Course #341"
             body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits."
             to="/courses"
             cta="Course details"
