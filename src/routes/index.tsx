@@ -91,7 +91,7 @@ function HomePage() {
             icon={<Monitor className="h-5 w-5" />}
             eyebrow="Most accessible"
             title="Online Courses"
-            body="TCEQ-approved supervisor licensing, waste screening, and specialized medical waste courses."
+            body="Providing current and new MSW Supervisors TCEQ approved courses to obtain an initial license and CEUs to maintain a current license. Online classes are conducted on the WebEx platform with a live instructor. "
             to="/schedules"
             cta="View online schedule"
             featured
