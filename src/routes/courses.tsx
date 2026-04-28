@@ -129,13 +129,13 @@ function CoursesAndServicesPage() {
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
             <div>
               <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent text-slate-950">
-                TCEQ-approved training & environmental compliance support
+                ​
               </span>
               <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-                Courses & services for Texas environmental supervisors and operators.
+                Courses & services for MSW Supervisors and Operators
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-                TCEQ-approved supervisor licensing courses plus hands-on, on-site environmental
+                TCEQ-approved supervisor licensing courses and on-site environmental
                 compliance services. All of our courses meet the requirements to renew a current
                 MSW License.
               </p>
@@ -162,7 +162,7 @@ function CoursesAndServicesPage() {
                   to="/contact"
                   className="inline-flex w-fit items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
                 >
-                  Ask about scheduling <ArrowRight className="h-4 w-4" />
+                  Contact us <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
               <nav className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
