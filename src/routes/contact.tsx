@@ -38,8 +38,8 @@ function ContactPage() {
               Let's talk about your next course or audit.
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Email us to request a Chemical Inventory Audit, schedule on-site SOP training,
-              or enroll in an upcoming TCEQ-approved course.
+              Email us to request a Chemical Inventory Audit or schedule any on-site
+              training.
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
