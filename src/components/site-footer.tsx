@@ -10,7 +10,7 @@ import certSam from "@/assets/cert-sam.jpg";
 const certifications = [
   { src: certWbe, alt: "Certified Women's Business Enterprise" },
   { src: certTdlr, alt: "Texas Department of Licensing and Regulation" },
-  { src: certHoustonSeal, alt: "City of Houston" },
+  { src: certTexasHub, alt: "Statewide Historically Underutilized Business Program" },
   { src: certHoustonObo, alt: "City of Houston Mayor's Office of Business Opportunity" },
   { src: certSam, alt: "System for Award Management" },
 ];
