@@ -108,7 +108,7 @@ function HomePage() {
             icon={<Users className="h-5 w-5" />}
             eyebrow="On-site & custom"
             title="Custom, site-specific, in-person classes"
-            body="Need training delivered at your facility? We schedule custom, site-specific in-person classes built around your team's operations and SOP."
+            body="Need training delivered at your facility? We develop site-specific in-person classes built around your team's operations and SOP.  "
             to="/contact"
             cta="Contact us"
           />
