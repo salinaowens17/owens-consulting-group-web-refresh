@@ -311,20 +311,28 @@ function CoursesAndServicesPage() {
       {/* First Aid / CPR / AED */}
       <section id="first-aid" className="border-b border-border bg-primary text-white">
         <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
-          <div className="max-w-2xl">
-            <span className="text-xs font-medium uppercase tracking-[0.18em] text-white">
-              Safety certification
-            </span>
-            <h2 className="mt-3 font-serif text-3xl font-semibold text-white md:text-4xl">
-              First Aid / CPR / AED training
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-white">
-              Owens Consulting Group, LLC offers nationally recognized First Aid, CPR, and AED
-              certification courses for workplace responders, healthcare providers, and
-              community members. Courses are delivered on-site at your facility or at a
-              scheduled location, with hands-on skills practice and a 2-year certification card
-              issued upon successful completion.
-            </p>
+          <div className="grid items-start gap-10 md:grid-cols-[1fr_auto]">
+            <div className="max-w-2xl">
+              <span className="text-xs font-medium uppercase tracking-[0.18em] text-white">
+                Safety certification
+              </span>
+              <h2 className="mt-3 font-serif text-3xl font-semibold text-white md:text-4xl">
+                First Aid / CPR / AED training
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-white">
+                Owens Consulting Group, LLC offers nationally recognized First Aid, CPR, and AED
+                certification courses for workplace responders, healthcare providers, and
+                community members. Courses are delivered on-site at your facility or at a
+                scheduled location, with hands-on skills practice and a 2-year certification card
+                issued upon successful completion.
+              </p>
+            </div>
+            <img
+              src={cprBadge}
+              alt="CPR, First Aid, and AED Certified badge"
+              className="h-32 w-32 shrink-0 md:h-40 md:w-40 lg:h-48 lg:w-48"
+              loading="lazy"
+            />
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
