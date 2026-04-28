@@ -122,7 +122,7 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-2 px-5 py-6 text-xs text-primary-foreground/60 md:flex-row md:items-center md:px-8">
           <p>© {new Date().getFullYear()} Owens Consulting Group, LLC. All rights reserved.</p>
-          <p>TCEQ Provider #782 · TDLR Approved</p>
+          <p>TCEQ Training Provider #782 · TDLR Approved</p>
         </div>
         <div className="mx-auto max-w-6xl px-5 pb-6 text-center text-[11px] text-primary-foreground/50 md:px-8">
           <p>
