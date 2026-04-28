@@ -146,7 +146,7 @@ function ResourcesPage() {
         </div>
 
         <div className="mt-14">
-          <h2 className="font-serif text-2xl font-semibold text-primary">
+          <h2 className="font-serif font-semibold text-primary text-lg">
             TCEQ licensing resources
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
