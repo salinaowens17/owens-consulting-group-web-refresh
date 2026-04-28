@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Download, FileText, ShieldAlert } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
+import puffinImage from "@/assets/puffin.jpg";
 import {
   IN_PERSON_REGISTRATION_PDF,
   ONLINE_REGISTRATION_PDF,
