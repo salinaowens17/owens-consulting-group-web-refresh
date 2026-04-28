@@ -140,7 +140,7 @@ const onlineSessions: Session[] = [
   })),
   // Waste Screening — 5 slots
   {
-    date: "Rolling enrollment",
+    date: "Date TBD",
     course: "Waste Screening",
     code: "TCEQ #341",
     duration: "8 hours",
@@ -157,7 +157,7 @@ const onlineSessions: Session[] = [
   })),
   // Waste Screening En Español — 1 slot
   {
-    date: "Rolling enrollment",
+    date: "Date TBD",
     course: "Waste Screening En Español",
     code: "TCEQ #341",
     duration: "8 hours",
@@ -165,7 +165,7 @@ const onlineSessions: Session[] = [
     seats: "Open enrollment",
   },
   {
-    date: "Rolling enrollment",
+    date: "Date TBD",
     course: "Specialized Medical Waste",
     code: "TCEQ #1390",
     duration: "8 hours",
