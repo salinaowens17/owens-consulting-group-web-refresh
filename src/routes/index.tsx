@@ -45,7 +45,7 @@ function HomePage() {
                 OCG is a TCEQ-approved, MSW-licensed training provider
               </h1>
               <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
-                OCG is a TCEQ-approved, MSW-licensed training provider.
+                ​
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
                 <Link
