@@ -2,10 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MapPin } from "lucide-react";
 import ocgLogo from "@/assets/ocg-logo.png";
 import certWbe from "@/assets/cert-wbe.gif";
-import certTexasHub from "@/assets/cert-texas-hub.png";
+import certTexasHub from "@/assets/cert-texas-hub.jpg";
 import certHoustonObo from "@/assets/cert-houston-obo.png";
 import certTdlr from "@/assets/cert-tdlr.png";
-import certSam from "@/assets/cert-sam.png";
+import certSam from "@/assets/cert-sam.jpg";
 
 const certifications = [
   { src: certWbe, alt: "Certified Women's Business Enterprise" },
