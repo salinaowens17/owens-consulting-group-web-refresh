@@ -10,7 +10,7 @@ import {
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Owens Consulting Group" },
+      { title: "FAQ — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/faq")({
       },
       {
         property: "og:title",
-        content: "Frequently Asked Questions — Owens Consulting Group",
+        content: "Frequently Asked Questions — Owens Consulting Group, LLC",
       },
       {
         property: "og:description",
