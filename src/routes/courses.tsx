@@ -7,7 +7,6 @@ import {
   FileSearch,
   FileText,
   HeartPulse,
-  Activity,
   ShieldPlus,
 } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
