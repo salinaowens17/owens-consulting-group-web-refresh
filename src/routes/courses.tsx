@@ -20,7 +20,7 @@ import landfillAerial from "@/assets/landfill-aerial.jpg";
 export const Route = createFileRoute("/courses")({
   head: () => ({
     meta: [
-      { title: "Courses & Services — Owens Consulting Group" },
+      { title: "Courses & Services — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/courses")({
       },
       {
         property: "og:title",
-        content: "Courses & Services — Owens Consulting Group",
+        content: "Courses & Services — Owens Consulting Group, LLC",
       },
       {
         property: "og:description",
