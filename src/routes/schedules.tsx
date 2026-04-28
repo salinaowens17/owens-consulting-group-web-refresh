@@ -88,6 +88,7 @@ const inPersonSessions: Session[] = [
 ];
 
 const onlineSessions: Session[] = [
+  // MSW A — 4 slots
   {
     date: "Jul 21–23, 2026",
     course: "MSW A Supervisor Licensing",
@@ -97,6 +98,31 @@ const onlineSessions: Session[] = [
     seats: "Seats available",
   },
   {
+    date: "Date TBD",
+    course: "MSW A Supervisor Licensing",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  },
+  {
+    date: "Date TBD",
+    course: "MSW A Supervisor Licensing",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  },
+  {
+    date: "Date TBD",
+    course: "MSW A Supervisor Licensing",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  },
+  // MSW B — 8 slots
+  {
     date: "Mar 3–5, 2026",
     course: "MSW B Supervisor Licensing",
     code: "TCEQ #514",
@@ -104,6 +130,15 @@ const onlineSessions: Session[] = [
     location: "Online (Zoom)",
     seats: "Seats available",
   },
+  ...Array.from({ length: 7 }, () => ({
+    date: "Date TBD",
+    course: "MSW B Supervisor Licensing",
+    code: "TCEQ #514",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  })),
+  // Waste Screening — 5 slots
   {
     date: "Rolling enrollment",
     course: "Waste Screening",
@@ -112,6 +147,14 @@ const onlineSessions: Session[] = [
     location: "Online",
     seats: "Open enrollment",
   },
+  ...Array.from({ length: 4 }, () => ({
+    date: "Date TBD",
+    course: "Waste Screening",
+    code: "TCEQ #341",
+    duration: "8 hours",
+    location: "Online",
+    seats: "Open enrollment",
+  })),
   {
     date: "Rolling enrollment",
     course: "Specialized Medical Waste",
