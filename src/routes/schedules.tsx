@@ -89,6 +89,22 @@ const inPersonSessions: Session[] = [
 
 const onlineSessions: Session[] = [
   {
+    date: "Jul 21–23, 2026",
+    course: "MSW A Supervisor Licensing",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  },
+  {
+    date: "Mar 3–5, 2026",
+    course: "MSW B Supervisor Licensing",
+    code: "TCEQ #514",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Seats available",
+  },
+  {
     date: "Rolling enrollment",
     course: "Waste Screening",
     code: "TCEQ #341",
@@ -103,22 +119,6 @@ const onlineSessions: Session[] = [
     duration: "8 hours · self-paced",
     location: "Online",
     seats: "Open enrollment",
-  },
-  {
-    date: "Mar 3–5, 2026",
-    course: "MSW B Supervisor Licensing",
-    code: "TCEQ #514",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
-  {
-    date: "Jul 21–23, 2026",
-    course: "MSW A Supervisor Licensing",
-    code: "TCEQ #513",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
   },
 ];
 
