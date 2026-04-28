@@ -4,7 +4,7 @@ import ocgLogo from "@/assets/ocg-logo.png";
 import certWbe from "@/assets/cert-wbe.gif";
 import certTexasHub from "@/assets/cert-texas-hub.jpg";
 import certHoustonObo from "@/assets/cert-houston-obo.jpeg";
-import certTdlr from "@/assets/cert-tdlr.jpg";
+import certTdlr from "@/assets/cert-tdlr.png";
 import certSam from "@/assets/cert-sam.jpg";
 
 const certifications = [
