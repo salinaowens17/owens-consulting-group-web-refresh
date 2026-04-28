@@ -46,18 +46,17 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary-foreground p-1.5">
-              <img src={ocgLogo} alt="Owens Consulting Group" className="h-full w-auto object-contain" />
+              <img src={ocgLogo} alt="Owens Consulting Group, LLC" className="h-full w-auto object-contain" />
             </span>
             <div>
-              <p className="font-serif text-lg font-semibold">Owens Consulting Group</p>
+              <p className="font-serif text-lg font-semibold">Owens Consulting Group, LLC</p>
               <p className="text-xs uppercase tracking-[0.16em] text-primary-foreground/60">
                 Environmental compliance & training
               </p>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/75">
-            A TCEQ-approved training provider serving Texas with regulatory training and
-            environmental compliance support.
+            ​
           </p>
         </div>
 
