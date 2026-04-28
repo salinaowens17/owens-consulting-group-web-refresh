@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Calendar, Download, MapPin, Monitor, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
+import seaTurtleImage from "@/assets/sea-turtle.jpg";
 import {
   IN_PERSON_REGISTRATION_PDF,
   ONLINE_REGISTRATION_PDF,
@@ -178,39 +179,48 @@ function SchedulesPage() {
   return (
     <SiteShell>
       <section className="border-b border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            2026 schedule
-          </span>
-          <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Upcoming course dates — online and in person.
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Browse upcoming TCEQ-approved sessions. Reserve your seat by downloading the
-            registration form and emailing it back to us.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={ONLINE_REGISTRATION_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-            >
-              <Download className="h-4 w-4" /> Online course registration (PDF)
-            </a>
-            <a
-              href={IN_PERSON_REGISTRATION_PDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-            >
-              <Download className="h-4 w-4" /> In-person course registration (PDF)
-            </a>
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-12 md:px-8 md:py-24">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              2026 schedule
+            </span>
+            <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+              Upcoming course dates — online and in person.
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Browse upcoming TCEQ-approved sessions. Reserve your seat by downloading the
+              registration form and emailing it back to us.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={ONLINE_REGISTRATION_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+              >
+                <Download className="h-4 w-4" /> Online course registration (PDF)
+              </a>
+              <a
+                href={IN_PERSON_REGISTRATION_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+              >
+                <Download className="h-4 w-4" /> In-person course registration (PDF)
+              </a>
+            </div>
+            <p className="mt-5 text-xs text-muted-foreground">
+              Prototype note: dates shown below are placeholders for your client to review the
+              layout. Real dates can be swapped in once confirmed.
+            </p>
           </div>
-          <p className="mt-5 text-xs text-muted-foreground">
-            Prototype note: dates shown below are placeholders for your client to review the
-            layout. Real dates can be swapped in once confirmed.
-          </p>
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <img
+              src={seaTurtleImage}
+              alt="Sea turtle swimming beneath a bright sun"
+              className="h-full w-full object-contain"
+            />
+          </div>
         </div>
       </section>
 
