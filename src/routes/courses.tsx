@@ -190,7 +190,7 @@ function CoursesAndServicesPage() {
               <div className="absolute -inset-4 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,var(--color-accent)_0%,transparent_60%)] opacity-20" aria-hidden />
               <img
                 src={landfillAerial}
-                alt="Aerial view of a municipal solid waste landfill with a bulldozer working the active face — the type of operation supported by TCEQ-approved supervisor training and environmental compliance services."
+                alt="A clear glass sphere resting on calm water at dusk, reflecting a soft pastel sky."
                 className="aspect-[2/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
                 loading="eager"
               />
