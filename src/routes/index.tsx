@@ -138,6 +138,7 @@ function HomePage() {
             to="/courses"
             cta="Course details"
           />
+          </div>
         </div>
       </section>
 
