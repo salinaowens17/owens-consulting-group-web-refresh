@@ -112,9 +112,6 @@ export function SiteFooter() {
                 owenscgtx@gmail.com
               </a>
             </li>
-            <li className="flex gap-2">
-              <span>TCEQ Provider #782</span>
-            </li>
           </ul>
         </div>
       </div>
