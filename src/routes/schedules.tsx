@@ -218,7 +218,6 @@ function SchedulesPage() {
         title="In-person classes across Texas"
         description="Hands-on instruction at venues in Houston and the Lower Rio Grande Valley."
         sessions={inPersonSessions}
-        accent="accent"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
