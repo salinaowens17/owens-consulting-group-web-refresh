@@ -232,7 +232,7 @@ function SchedulesPage() {
         eyebrow="In-person"
         icon={<Users className="h-5 w-5" />}
         title="In-person classes across Texas"
-        description="Hands-on instruction at venues in Houston, Kingwood, Austin, Dallas, and San Antonio."
+        description="Hands-on instruction at venues in Houston and the Lower Rio Grande Valley."
         sessions={inPersonSessions}
         accent="accent"
       />
