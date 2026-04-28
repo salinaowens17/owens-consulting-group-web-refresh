@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import ocgLogo from "@/assets/ocg-logo.png";
 import certWbe from "@/assets/cert-wbe.gif";
 import certTexasHub from "@/assets/cert-texas-hub.jpg";
@@ -113,7 +113,6 @@ export function SiteFooter() {
               </a>
             </li>
             <li className="flex gap-2">
-              <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
               <span>TCEQ Provider #782</span>
             </li>
           </ul>
