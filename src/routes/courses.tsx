@@ -200,15 +200,16 @@ function CoursesAndServicesPage() {
       </section>
 
       {/* Courses */}
-      <section id="courses" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
+      <section id="courses" className="scroll-mt-24 bg-[#1f2a44] text-white">
+        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <div className="max-w-2xl">
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+          <span className="text-xs font-medium uppercase tracking-[0.18em] text-white">
             Courses
           </span>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold text-white md:text-4xl">
             TCEQ-approved courses
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-base leading-relaxed text-white">
             In-person and online schedules are available throughout 2026.
           </p>
         </div>
@@ -217,21 +218,21 @@ function CoursesAndServicesPage() {
           {courses.map((c) => (
             <article
               key={c.code}
-              className="flex flex-col rounded-xl border border-border bg-card p-8 transition-shadow hover:shadow-[0_15px_45px_-25px_rgba(20,40,80,0.4)]"
+              className="flex flex-col rounded-xl border border-white/20 bg-[#1f2a44] p-8 transition-shadow hover:shadow-[0_15px_45px_-25px_rgba(0,0,0,0.6)]"
             >
               <div className="flex items-center justify-between">
-                <span className="rounded-full bg-accent/10 px-3 py-1 text-[11px] font-medium uppercase tracking-widest text-accent">
+                <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-widest text-white">
                   {c.code}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-1.5 text-sm text-white">
                   <Clock className="h-4 w-4" /> {c.duration}
                 </span>
               </div>
-              <h3 className="mt-5 font-serif text-2xl font-semibold text-primary">
+              <h3 className="mt-5 font-serif text-2xl font-semibold text-white">
                 {c.title}
               </h3>
-              <p className="mt-3 text-sm font-medium text-foreground/80">{c.audience}</p>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-sm font-medium text-white">{c.audience}</p>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-white">
                 {c.body}
               </p>
               {c.badges && (
@@ -239,7 +240,7 @@ function CoursesAndServicesPage() {
                   {c.badges.map((b) => (
                     <span
                       key={b}
-                      className="rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-gold"
+                      className="rounded-full border border-white/40 bg-white/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-white"
                     >
                       {b}
                     </span>
@@ -250,11 +251,12 @@ function CoursesAndServicesPage() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl border border-accent/30 bg-accent/5 p-6 text-sm text-foreground">
+        <div className="mt-12 rounded-xl border border-white/30 bg-white/5 p-6 text-sm text-white">
           <p>
-            <span className="font-semibold text-accent">Note:</span> All of these courses meet
+            <span className="font-semibold text-white">Note:</span> All of these courses meet
             the requirements to renew a current MSW License.
           </p>
+        </div>
         </div>
       </section>
 
