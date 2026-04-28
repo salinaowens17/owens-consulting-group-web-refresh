@@ -266,18 +266,6 @@ function ScheduleSection({
   description: string;
   sessions: Session[];
 }) {
-  // Group sessions by course, preserving first-seen order
-  const groups = sessions.reduce<Record<string, { course: string; code: string; items: Session[] }>>(
-    (acc, s) => {
-      const key = `${s.course}|${s.code}`;
-      if (!acc[key]) acc[key] = { course: s.course, code: s.code, items: [] };
-      acc[key].items.push(s);
-      return acc;
-    },
-    {},
-  );
-  const groupList = Object.values(groups);
-
   return (
     <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
       <div>
@@ -295,59 +283,55 @@ function ScheduleSection({
         </p>
       </div>
 
-      <div className="mt-10 space-y-8">
-        {groupList.map((group) => (
-          <article
-            key={`${group.course}-${group.code}`}
-            className="overflow-hidden rounded-2xl border border-border bg-card"
-          >
-            <header className="flex flex-col gap-2 border-b border-border bg-surface px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8">
-              <div className="flex items-center gap-3">
-                <span className="rounded-full bg-primary px-2.5 py-1 text-[11px] font-medium uppercase tracking-widest text-primary-foreground">
-                  {group.code}
-                </span>
-                <h3 className="font-serif text-xl font-semibold text-primary md:text-2xl">
-                  {group.course}
-                </h3>
-              </div>
-              <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                {group.items.length} {group.items.length === 1 ? "session" : "sessions"}
-              </span>
-            </header>
+      <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
+        <header className="flex items-center justify-between border-b border-border bg-surface px-6 py-5 md:px-8">
+          <h3 className="font-serif text-xl font-semibold text-primary md:text-2xl">
+            2026 sessions
+          </h3>
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            {sessions.length} {sessions.length === 1 ? "session" : "sessions"}
+          </span>
+        </header>
 
-            <ul className="divide-y divide-border">
-              {group.items.map((s, i) => (
-                <li
-                  key={`${s.code}-${s.date}-${i}`}
-                  className="flex flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8"
-                >
-                  <div className="grid gap-3 md:flex-1 md:grid-cols-3 md:gap-6">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4 text-accent" />
-                      <div>
-                        <div className="font-medium text-primary">{s.date}</div>
-                        <div className="text-xs font-medium text-accent">{s.seats}</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <MapPin className="h-4 w-4 text-accent" />
-                      {s.location}
-                    </div>
-                    <div className="text-sm text-muted-foreground">{s.duration}</div>
+        <ul className="divide-y divide-border">
+          {sessions.map((s, i) => (
+            <li
+              key={`${s.code}-${s.date}-${i}`}
+              className="flex flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8"
+            >
+              <div className="grid gap-3 md:flex-1 md:grid-cols-[1.4fr_1.2fr_1fr_0.8fr] md:items-center md:gap-6">
+                <div>
+                  <div className="font-serif text-base font-semibold text-primary">
+                    {s.course}
                   </div>
-                  <a
-                    href={`mailto:owenscgtx@gmail.com?subject=Register:%20${encodeURIComponent(
-                      `${s.course} (${s.code}) — ${s.date}`,
-                    )}`}
-                    className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-                  >
-                    Registration Form
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
+                  <span className="mt-1 inline-block rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-accent">
+                    {s.code}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-accent" />
+                  <div>
+                    <div className="font-medium text-primary">{s.date}</div>
+                    <div className="text-xs font-medium text-accent">{s.seats}</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <MapPin className="h-4 w-4 text-accent" />
+                  {s.location}
+                </div>
+                <div className="text-sm text-muted-foreground">{s.duration}</div>
+              </div>
+              <a
+                href={`mailto:owenscgtx@gmail.com?subject=Register:%20${encodeURIComponent(
+                  `${s.course} (${s.code}) — ${s.date}`,
+                )}`}
+                className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Registration Form
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
