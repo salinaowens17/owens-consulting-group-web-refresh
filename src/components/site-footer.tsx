@@ -113,7 +113,6 @@ export function SiteFooter() {
               </a>
             </li>
             <li className="flex gap-2">
-              <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
               <span>TCEQ Provider #782</span>
             </li>
           </ul>
