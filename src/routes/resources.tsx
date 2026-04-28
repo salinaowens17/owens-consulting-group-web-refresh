@@ -64,17 +64,26 @@ function ResourcesPage() {
   return (
     <SiteShell>
       <section className="border-b border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            Resources
-          </span>
-          <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Forms, regulatory references, and safety information.
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Helpful documents for current students, facility employees, and compliance
-            teams.
-          </p>
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-12 md:px-8 md:py-24">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Resources
+            </span>
+            <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+              Forms, regulatory references, and safety information.
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Helpful documents for current students, facility employees, and compliance
+              teams.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <img
+              src={puffinImage}
+              alt="Atlantic puffin standing on a rock against a soft blue background"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
