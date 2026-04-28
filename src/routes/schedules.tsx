@@ -259,115 +259,82 @@ function ScheduleSection({
   title,
   description,
   sessions,
-  accent,
 }: {
   eyebrow: string;
   icon: React.ReactNode;
   title: string;
   description: string;
   sessions: Session[];
-  accent: "primary" | "accent";
 }) {
-  const tagClasses =
-    accent === "accent"
-      ? "bg-accent/10 text-accent"
-      : "bg-primary text-primary-foreground";
+  // Group sessions by course, preserving first-seen order
+  const groups = sessions.reduce<Record<string, { course: string; code: string; items: Session[] }>>(
+    (acc, s) => {
+      const key = `${s.course}|${s.code}`;
+      if (!acc[key]) acc[key] = { course: s.course, code: s.code, items: [] };
+      acc[key].items.push(s);
+      return acc;
+    },
+    {},
+  );
+  const groupList = Object.values(groups);
 
   return (
     <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between md:gap-6">
-        <div>
-          <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-accent">
-            <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent/10">
-              {icon}
-            </span>
-            {eyebrow}
+      <div>
+        <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-accent">
+          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent/10">
+            {icon}
           </span>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
-            {title}
-          </h2>
-          <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
-            {description}
-          </p>
-        </div>
+          {eyebrow}
+        </span>
+        <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
+          {title}
+        </h2>
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+          {description}
+        </p>
       </div>
 
-      {/* Mobile: card list */}
-      <div className="mt-10 grid gap-4 md:hidden">
-        {sessions.map((s, i) => (
+      <div className="mt-10 space-y-8">
+        {groupList.map((group) => (
           <article
-            key={`${s.code}-${i}`}
-            className="rounded-xl border border-border bg-card p-5"
+            key={`${group.course}-${group.code}`}
+            className="overflow-hidden rounded-2xl border border-border bg-card"
           >
-            <div className="flex items-center justify-between">
-              <span className={`rounded-full px-2.5 py-1 text-[11px] font-medium uppercase tracking-widest ${tagClasses}`}>
-                {s.code}
+            <header className="flex flex-col gap-2 border-b border-border bg-surface px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8">
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-primary px-2.5 py-1 text-[11px] font-medium uppercase tracking-widest text-primary-foreground">
+                  {group.code}
+                </span>
+                <h3 className="font-serif text-xl font-semibold text-primary md:text-2xl">
+                  {group.course}
+                </h3>
+              </div>
+              <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                {group.items.length} {group.items.length === 1 ? "session" : "sessions"}
               </span>
-              <span className="text-xs font-medium text-accent">{s.seats}</span>
-            </div>
-            <h3 className="mt-3 font-serif text-lg font-semibold text-primary">
-              {s.course}
-            </h3>
-            <dl className="mt-3 space-y-1.5 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-accent" />
-                <dd>{s.date}</dd>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-accent" />
-                <dd>{s.location}</dd>
-              </div>
-              <div className="text-xs uppercase tracking-wider text-muted-foreground/80">
-                {s.duration}
-              </div>
-            </dl>
-            <a
-              href={`mailto:owenscgtx@gmail.com?subject=Register:%20${encodeURIComponent(
-                `${s.course} (${s.code}) — ${s.date}`,
-              )}`}
-              className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Registration Form
-            </a>
-          </article>
-        ))}
-      </div>
+            </header>
 
-      {/* Desktop: table */}
-      <div className="mt-10 hidden overflow-hidden rounded-xl border border-border bg-card md:block">
-        <table className="w-full text-left text-sm">
-          <thead className="border-b border-border bg-surface">
-            <tr className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-              <th className="px-6 py-4">Date</th>
-              <th className="px-6 py-4">Course</th>
-              <th className="px-6 py-4">Location</th>
-              <th className="px-6 py-4">Duration</th>
-              <th className="px-6 py-4 text-right">Register</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border">
-            {sessions.map((s, i) => (
-              <tr key={`${s.code}-${i}`} className="transition-colors hover:bg-secondary/40">
-                <td className="px-6 py-5 align-top">
-                  <div className="font-medium text-primary">{s.date}</div>
-                  <div className="mt-1 text-xs font-medium text-accent">{s.seats}</div>
-                </td>
-                <td className="px-6 py-5 align-top">
-                  <div className="font-serif text-base font-semibold text-primary">
-                    {s.course}
+            <ul className="divide-y divide-border">
+              {group.items.map((s, i) => (
+                <li
+                  key={`${s.code}-${s.date}-${i}`}
+                  className="flex flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8"
+                >
+                  <div className="grid gap-3 md:flex-1 md:grid-cols-3 md:gap-6">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4 text-accent" />
+                      <div>
+                        <div className="font-medium text-primary">{s.date}</div>
+                        <div className="text-xs font-medium text-accent">{s.seats}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <MapPin className="h-4 w-4 text-accent" />
+                      {s.location}
+                    </div>
+                    <div className="text-sm text-muted-foreground">{s.duration}</div>
                   </div>
-                  <span className={`mt-1 inline-block rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest ${tagClasses}`}>
-                    {s.code}
-                  </span>
-                </td>
-                <td className="px-6 py-5 align-top text-muted-foreground">
-                  <div className="flex items-center gap-1.5">
-                    <MapPin className="h-3.5 w-3.5 text-accent" />
-                    {s.location}
-                  </div>
-                </td>
-                <td className="px-6 py-5 align-top text-muted-foreground">{s.duration}</td>
-                <td className="px-6 py-5 text-right align-top">
                   <a
                     href={`mailto:owenscgtx@gmail.com?subject=Register:%20${encodeURIComponent(
                       `${s.course} (${s.code}) — ${s.date}`,
@@ -376,11 +343,11 @@ function ScheduleSection({
                   >
                     Registration Form
                   </a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
     </section>
   );
