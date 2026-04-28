@@ -96,7 +96,7 @@ function ContactPage() {
                     Credentials
                   </p>
                   <ul className="mt-1.5 space-y-1 text-sm">
-                    <li className="font-medium text-primary">​</li>
+                    <li className="font-medium text-primary">TCEQ Training Provider #782</li>
                     <li className="text-muted-foreground">State of Texas HUB Approved</li>
                     <li className="text-muted-foreground">City of Houston OBO Approved</li>
                     <li className="text-muted-foreground">Women&rsquo;s Business Enterprise Approved</li>

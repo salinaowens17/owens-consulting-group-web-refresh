@@ -39,7 +39,7 @@ function HomePage() {
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-accent">
                 <Sprout className="h-3.5 w-3.5" />
-                ​
+                TCEQ Provider #782
               </span>
               <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
                 OCG is a TCEQ approved, MSW License training provider
