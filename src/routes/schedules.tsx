@@ -188,7 +188,7 @@ function SchedulesPage() {
               Upcoming course dates — online and in person.
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Browse upcoming TCEQ-approved sessions. Reserve your seat by downloading the
+              Browse upcoming TCEQ-approved courses. Reserve your seat by downloading the
               registration form and emailing it back to us.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
