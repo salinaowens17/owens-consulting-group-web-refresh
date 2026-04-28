@@ -109,15 +109,15 @@ const services = [
     icon: <FileSearch className="h-5 w-5" />,
     eyebrow: "On-site",
     title: "Site-Specific SOP Training",
-    body: "Site Operating Plan (SOP) training — annual & refresher — designed to meet the requirements in 30 TAC 330.127. Delivered on-site for your team and tailored to your facility's operating plan.",
-    cite: "Meets 30 TAC 330.127",
+    body: "Site Operating Plan (SOP) training — annual & refresher — designed to meet the requirements in 30 TAC 330.127. Delivered on-site for your team and tailored to meet the requirements of your facility's site operating plan.",
+    cite: "​",
   },
   {
     icon: <ClipboardCheck className="h-5 w-5" />,
     eyebrow: "Audit & review",
     title: "Chemical Inventory Audits",
-    body: "Professional review and audit of all chemicals maintained on-site, paired with the most current Safety Data Sheets (SDSs). Comprehensive and compliant with OSHA Standard 29 CFR 1910.1200(g).",
-    cite: "OSHA 29 CFR 1910.1200(g)",
+    body: "Comprehensive review and audit of all chemicals maintained on-site, paired with the most current Safety Data Sheets (SDSs).  Compliant with OSHA Standard 29 CFR 1910.1200(g).",
+    cite: "​",
   },
 ];
 
