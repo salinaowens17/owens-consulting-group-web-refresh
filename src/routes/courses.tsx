@@ -191,7 +191,7 @@ function CoursesAndServicesPage() {
               <img
                 src={landfillAerial}
                 alt="A clear glass sphere resting on calm water at dusk, reflecting a soft pastel sky."
-                className="aspect-[2/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
+                className="aspect-[3/2] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
                 loading="eager"
               />
             </div>
