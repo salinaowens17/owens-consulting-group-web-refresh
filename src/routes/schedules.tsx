@@ -168,14 +168,7 @@ function SchedulesPage() {
         </div>
       </section>
 
-      <ScheduleSection
-        eyebrow="Online · most popular"
-        icon={<Monitor className="h-5 w-5" />}
-        title="Online & live virtual sessions"
-        description="Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor licensing classes — our most accessible option, with the highest enrollment."
-        sessions={onlineSessions}
-        accent="primary"
-      />
+      <OnlineScheduleSection sessions={onlineSessions} />
 
       <div className="border-t border-border" />
 
