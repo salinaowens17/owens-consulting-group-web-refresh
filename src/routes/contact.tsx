@@ -6,13 +6,13 @@ import { SiteShell } from "@/components/site-shell";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Owens Consulting Group" },
+      { title: "Contact — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
-          "Contact Owens Consulting Group in Kingwood, Texas. Email owenscgtx@gmail.com to schedule courses, audits, or training.",
+          "Contact Owens Consulting Group, LLC in Kingwood, Texas. Email owenscgtx@gmail.com to schedule courses, audits, or training.",
       },
-      { property: "og:title", content: "Contact — Owens Consulting Group" },
+      { property: "og:title", content: "Contact — Owens Consulting Group, LLC" },
       {
         property: "og:description",
         content: "Email us to schedule courses, audits, or on-site SOP training.",
