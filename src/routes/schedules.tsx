@@ -404,17 +404,13 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
                   key={`${s.code}-${s.date}-${i}`}
                   className="flex flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8"
                 >
-                  <div className="grid gap-3 md:flex-1 md:grid-cols-3 md:gap-6">
+                  <div className="grid gap-3 md:flex-1 md:grid-cols-2 md:gap-6">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4 text-accent" />
                       <div>
                         <div className="font-medium text-primary">{s.date}</div>
                         <div className="text-xs font-medium text-accent">{s.seats}</div>
                       </div>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <MapPin className="h-4 w-4 text-accent" />
-                      {s.location}
                     </div>
                     <div className="text-sm text-muted-foreground">{s.duration}</div>
                   </div>
