@@ -12,7 +12,7 @@ import credAipg from "@/assets/cred-aipg.png";
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "Meet Our Team — Owens Consulting Group" },
+      { title: "Meet Our Team — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/team")({
       },
       {
         property: "og:title",
-        content: "Meet Our Team — Owens Consulting Group",
+        content: "Meet Our Team — Owens Consulting Group, LLC",
       },
       {
         property: "og:description",

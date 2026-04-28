@@ -46,18 +46,17 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary-foreground p-1.5">
-              <img src={ocgLogo} alt="Owens Consulting Group" className="h-full w-auto object-contain" />
+              <img src={ocgLogo} alt="Owens Consulting Group, LLC" className="h-full w-auto object-contain" />
             </span>
             <div>
-              <p className="font-serif text-lg font-semibold">Owens Consulting Group</p>
+              <p className="font-serif text-lg font-semibold">Owens Consulting Group, LLC</p>
               <p className="text-xs uppercase tracking-[0.16em] text-primary-foreground/60">
                 Environmental compliance & training
               </p>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/75">
-            A TCEQ-approved training provider serving Texas with regulatory training and
-            environmental compliance support.
+            ​
           </p>
         </div>
 
@@ -118,8 +117,8 @@ export function SiteFooter() {
 
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-2 px-5 py-6 text-xs text-primary-foreground/60 md:flex-row md:items-center md:px-8">
-          <p>© {new Date().getFullYear()} Owens Consulting Group. All rights reserved.</p>
-          <p>TCEQ Provider #782 · TDLR Approved Course Provider</p>
+          <p>© {new Date().getFullYear()} Owens Consulting Group, LLC. All rights reserved.</p>
+          <p>TCEQ Provider #782 · TDLR Approved</p>
         </div>
         <div className="mx-auto max-w-6xl px-5 pb-6 text-center text-[11px] text-primary-foreground/50 md:px-8">
           <p>

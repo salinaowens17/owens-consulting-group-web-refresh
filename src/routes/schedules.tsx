@@ -9,13 +9,13 @@ import {
 export const Route = createFileRoute("/schedules")({
   head: () => ({
     meta: [
-      { title: "Course Schedules — Owens Consulting Group" },
+      { title: "Course Schedules — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
           "Upcoming in-person and online TCEQ-approved course dates. Register for MSW supervisor licensing, waste screening, and specialized medical waste training.",
       },
-      { property: "og:title", content: "Course Schedules — Owens Consulting Group" },
+      { property: "og:title", content: "Course Schedules — Owens Consulting Group, LLC" },
       {
         property: "og:description",
         content:

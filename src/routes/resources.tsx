@@ -9,13 +9,13 @@ import {
 export const Route = createFileRoute("/resources")({
   head: () => ({
     meta: [
-      { title: "Resources & Regulatory References — Owens Consulting Group" },
+      { title: "Resources & Regulatory References — Owens Consulting Group, LLC" },
       {
         name: "description",
         content:
           "Safety Data Sheets information, course registration forms, and regulatory references for TCEQ, TDLR, and OSHA.",
       },
-      { property: "og:title", content: "Resources — Owens Consulting Group" },
+      { property: "og:title", content: "Resources — Owens Consulting Group, LLC" },
       {
         property: "og:description",
         content:

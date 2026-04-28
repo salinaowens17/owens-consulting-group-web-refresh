@@ -29,13 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Owens Consulting Group — Environmental Compliance Training in Texas" },
+      { title: "Owens Consulting Group, LLC — Environmental Compliance Training in Texas" },
       {
         name: "description",
         content:
           "TCEQ-approved environmental compliance training and consulting in Texas. MSW supervisor licensing, waste screening, and chemical inventory audits.",
       },
-      { name: "author", content: "Owens Consulting Group" },
+      { name: "author", content: "Owens Consulting Group, LLC" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],

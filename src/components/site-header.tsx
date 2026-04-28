@@ -23,14 +23,14 @@ export function SiteHeader() {
         <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
             src={ocgLogo}
-            alt="Owens Consulting Group"
+            alt="Owens Consulting Group, LLC"
             width={60}
             height={50}
             className="h-12 w-auto object-contain"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-2xl font-semibold text-primary">
-              Owens Consulting Group
+              Owens Consulting Group, LLC
             </span>
           </span>
         </Link>
