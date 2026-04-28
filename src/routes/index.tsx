@@ -149,7 +149,7 @@ function HomePage() {
                 Ready to schedule a course or audit?
               </h2>
               <p className="mt-4 max-w-xl text-primary-foreground/75">
-                Email us for course registration, on-site SOP training, or to schedule a
+                Email us with any questions, on-site SOP training, or to schedule a
                 chemical inventory audit.
               </p>
             </div>
