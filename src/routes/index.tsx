@@ -142,7 +142,7 @@ function HomePage() {
 
       {/* Contact band */}
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
-        <div className="overflow-hidden rounded-2xl border border-border bg-primary text-primary-foreground">
+        <div className="overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-primary via-primary to-accent text-primary-foreground shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--color-primary)_50%,transparent)]">
           <div className="grid gap-8 p-8 md:grid-cols-[2fr_1fr] md:items-center md:gap-10 md:p-12">
             <div>
               <h2 className="font-serif text-3xl font-semibold md:text-4xl">
