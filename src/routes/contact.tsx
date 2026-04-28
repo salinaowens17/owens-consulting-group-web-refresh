@@ -46,7 +46,7 @@ function ContactPage() {
         <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:gap-16">
           <div className="space-y-8">
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-primary">
+              <h2 className="font-serif font-semibold text-primary text-lg">
                 Reach out directly
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -114,7 +114,7 @@ function ContactPage() {
               }}
               className="rounded-2xl border border-border bg-card p-7 md:p-9"
             >
-              <h2 className="font-serif text-2xl font-semibold text-primary">
+              <h2 className="font-serif font-semibold text-primary text-lg">
                 Send a message
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
