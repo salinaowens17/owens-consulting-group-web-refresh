@@ -373,8 +373,7 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
           Online & live virtual sessions
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Self-paced courses with rolling enrollment, plus scheduled live-virtual supervisor
-          licensing classes — our most accessible option, with the highest enrollment.
+          Online course schedules
         </p>
       </div>
 
