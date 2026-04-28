@@ -206,12 +206,6 @@ function SchedulesPage() {
             >
               <Download className="h-4 w-4" /> In-person course registration (PDF)
             </a>
-            <a
-              href="mailto:owenscgtx@gmail.com?subject=Course%20registration"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-primary transition-colors hover:border-primary"
-            >
-              Email to register
-            </a>
           </div>
           <p className="mt-5 text-xs text-muted-foreground">
             Prototype note: dates shown below are placeholders for your client to review the
