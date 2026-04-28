@@ -139,6 +139,7 @@ function HomePage() {
             cta="Course details"
           />
         </div>
+        </div>
       </section>
 
       {/* Contact band */}
