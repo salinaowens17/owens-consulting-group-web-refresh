@@ -116,7 +116,7 @@ function HomePage() {
             icon={<BookOpen className="h-5 w-5" />}
             eyebrow="TDLR"
             title="TDLR Code Enforcement Officer License CEUs — Waste Screening Course #341"
-            body="An 8-hour course approved by TDLR for Code Enforcement Officer continuing education credits."
+            body="An 8-hour course approved by TDLR for Code Enforcement Officers' License continuing education credits."
             to="/courses"
             cta="Course details"
           />
@@ -132,7 +132,7 @@ function HomePage() {
             icon={<HeartPulse className="h-5 w-5" />}
             eyebrow="Certification"
             title="First Aid / CPR / AED"
-            body="Nationally recognized First Aid, CPR, and AED certification for adults, children, and infants. Includes a 2-year certification card upon successful completion."
+            body="Nationally recognized First Aid, CPR, and AED certification for adults. Includes a 2-year certification card upon successful completion."
             to="/courses"
             cta="Course details"
           />
