@@ -15,7 +15,7 @@ import {
   IN_PERSON_REGISTRATION_PDF,
   ONLINE_REGISTRATION_PDF,
 } from "@/lib/registration-forms";
-import landfillAerial from "@/assets/landfill-aerial.jpg";
+import landfillAerial from "@/assets/courses-hero-sphere.jpeg";
 
 export const Route = createFileRoute("/courses")({
   head: () => ({
