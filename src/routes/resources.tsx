@@ -112,7 +112,7 @@ function ResourcesPage() {
               href="mailto:owenscgtx@gmail.com?subject=SDS%20information%20request"
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
             >
-              Request SDS access <ArrowUpRight className="h-4 w-4" />
+              Request chemical inventory audit information <ArrowUpRight className="h-4 w-4" />
             </a>
           </article>
 
