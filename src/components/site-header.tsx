@@ -32,9 +32,6 @@ export function SiteHeader() {
             <span className="font-serif text-base font-semibold text-primary">
               Owens Consulting Group
             </span>
-            <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-              TCEQ Provider #782
-            </span>
           </span>
         </Link>
 
