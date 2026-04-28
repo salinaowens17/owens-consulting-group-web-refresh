@@ -25,19 +25,24 @@ export function SiteFooter() {
             Certifications & Affiliations
           </p>
           <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-5">
-            {certifications.map((cert) => (
-              <li key={cert.alt} className="flex items-center justify-center">
-                <img
-                  src={cert.src}
-                  alt={cert.alt}
-                  title={cert.alt}
-                  loading="lazy"
-                  width={240}
-                  height={240}
-                  className="h-32 w-auto object-contain transition-opacity hover:opacity-100 md:h-40"
-                />
-              </li>
-            ))}
+            {certifications.map((cert) => {
+              const isHouston = cert.alt.includes("City of Houston");
+              return (
+                <li key={cert.alt} className="flex items-center justify-center">
+                  <img
+                    src={cert.src}
+                    alt={cert.alt}
+                    title={cert.alt}
+                    loading="lazy"
+                    width={240}
+                    height={240}
+                    className={`w-auto object-contain transition-opacity hover:opacity-100 ${
+                      isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
+                    }`}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
