@@ -29,7 +29,7 @@ export function SiteHeader() {
             className="h-12 w-auto object-contain"
           />
           <span className="hidden flex-col leading-tight sm:flex">
-            <span className="font-serif text-base font-semibold text-primary">
+            <span className="font-serif text-2xl font-semibold text-primary">
               Owens Consulting Group
             </span>
           </span>
