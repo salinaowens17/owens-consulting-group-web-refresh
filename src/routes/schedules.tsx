@@ -286,7 +286,7 @@ function ScheduleSection({
       <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
         <header className="flex items-center justify-between border-b border-border bg-surface px-6 py-5 md:px-8">
           <h3 className="font-serif text-xl font-semibold text-primary md:text-2xl">
-            2026 sessions
+            2026 in-person classes
           </h3>
           <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             {sessions.length} {sessions.length === 1 ? "session" : "sessions"}
