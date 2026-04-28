@@ -321,7 +321,7 @@ function CoursesAndServicesPage() {
               First Aid / CPR / AED training
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white">
-              Owens Consulting Group offers nationally recognized First Aid, CPR, and AED
+              Owens Consulting Group, LLC offers nationally recognized First Aid, CPR, and AED
               certification courses for workplace responders, healthcare providers, and
               community members. Courses are delivered on-site at your facility or at a
               scheduled location, with hands-on skills practice and a 2-year certification card
