@@ -288,7 +288,7 @@ function ScheduleSection({
               )}`}
               className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              Register
+              Registration Form
             </a>
           </article>
         ))}
@@ -335,7 +335,7 @@ function ScheduleSection({
                     )}`}
                     className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                   >
-                    Register
+                    Registration Form
                   </a>
                 </td>
               </tr>
@@ -424,7 +424,7 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
                     )}`}
                     className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                   >
-                    Register
+                    Registration Form
                   </a>
                 </li>
               ))}
