@@ -200,7 +200,7 @@ function CoursesAndServicesPage() {
       </section>
 
       {/* Courses */}
-      <section id="courses" className="scroll-mt-24 bg-[#1f2a44] text-white">
+      <section id="courses" className="scroll-mt-24 bg-primary text-white">
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         <div className="max-w-2xl">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-white">
@@ -218,7 +218,7 @@ function CoursesAndServicesPage() {
           {courses.map((c) => (
             <article
               key={c.code}
-              className="flex flex-col rounded-xl border border-white/20 bg-[#1f2a44] p-8 transition-shadow hover:shadow-[0_15px_45px_-25px_rgba(0,0,0,0.6)]"
+              className="flex flex-col rounded-xl border border-white/20 bg-primary p-8 transition-shadow hover:shadow-[0_15px_45px_-25px_rgba(0,0,0,0.6)]"
             >
               <div className="flex items-center justify-between">
                 <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-widest text-white">
@@ -311,7 +311,7 @@ function CoursesAndServicesPage() {
       </section>
 
       {/* First Aid / CPR / AED */}
-      <section id="first-aid" className="border-b border-border bg-[#1f2a44] text-white">
+      <section id="first-aid" className="border-b border-border bg-primary text-white">
         <div className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 md:px-8">
           <div className="max-w-2xl">
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-white">
@@ -333,7 +333,7 @@ function CoursesAndServicesPage() {
             {safetyCourses.map((c) => (
               <article
                 key={c.title}
-                className="flex flex-col rounded-xl border border-white/20 bg-[#1f2a44] p-7 transition-all hover:-translate-y-0.5 hover:border-white/40 hover:shadow-[0_15px_45px_-25px_rgba(0,0,0,0.6)]"
+                className="flex flex-col rounded-xl border border-white/20 bg-primary p-7 transition-all hover:-translate-y-0.5 hover:border-white/40 hover:shadow-[0_15px_45px_-25px_rgba(0,0,0,0.6)]"
               >
                 <div className="flex items-center justify-between">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-white/10 text-white">
