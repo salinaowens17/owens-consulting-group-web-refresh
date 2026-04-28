@@ -128,7 +128,7 @@ function CoursesAndServicesPage() {
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
             <div>
-              <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent text-slate-950">
                 TCEQ-approved training & environmental compliance support
               </span>
               <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
