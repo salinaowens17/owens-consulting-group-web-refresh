@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BookOpen, ClipboardCheck, GraduationCap, HeartPulse, Mail, Monitor, ShieldCheck, Sprout, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
-import heroTeaching from "@/assets/david-dugger-teaching.jpeg";
+import heroTeaching from "@/assets/ocg-logo-hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,8 +68,8 @@ function HomePage() {
               <div className="absolute -inset-4 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,var(--color-accent)_0%,transparent_60%)] opacity-20" aria-hidden />
               <img
                 src={heroTeaching}
-                alt="David Dugger leading a TCEQ-approved training session for a class of Texas environmental professionals."
-                className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
+                alt="Owens Consulting Group logo — gear and leaf emblem."
+                className="aspect-[4/3] w-full rounded-2xl border border-border bg-background object-contain p-6 shadow-[0_25px_60px_-30px_rgba(20,40,80,0.55)]"
                 loading="eager"
               />
             </div>
