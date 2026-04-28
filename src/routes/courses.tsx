@@ -87,14 +87,6 @@ const safetyCourses = [
     body: "American Heart Association / American Red Cross-aligned certification includes hands-on skills practice and a 2-year certification card upon successful completion.",
   },
   {
-    icon: <Activity className="h-5 w-5" />,
-    title: "Basic Life Support (BLS) for Healthcare Providers",
-    duration: "4–5 hours",
-    audience:
-      "Nurses, EMS, medical/dental office staff, and other healthcare professionals",
-    body: "BLS certification course includes a 2-year BLS Provider card upon successful completion.",
-  },
-  {
     icon: <ShieldPlus className="h-5 w-5" />,
     title: "Bloodborne Pathogens (OSHA)",
     duration: "1–2 hours",
