@@ -328,24 +328,33 @@ function FaqPage() {
   return (
     <SiteShell>
       <section className="border-b border-border/70 bg-surface">
-        <div className="mx-auto max-w-4xl px-5 py-16 md:px-8 md:py-24">
-          <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Support
-          </p>
-          <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Frequently Asked Questions
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Answers to the questions we hear most often about MSW licensing, registration, exams,
-            and renewals. Don&rsquo;t see what you&rsquo;re looking for?{" "}
-            <a
-              href="mailto:owenscgtx@gmail.com"
-              className="text-accent underline-offset-4 hover:underline"
-            >
-              Email us
-            </a>
-            .
-          </p>
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-12 md:px-8 md:py-24">
+          <div>
+            <p className="font-sans text-xs font-medium uppercase tracking-[0.22em] text-accent">
+              Support
+            </p>
+            <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
+              Frequently Asked Questions
+            </h1>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              Answers to the questions we hear most often about MSW licensing, registration, exams,
+              and renewals. Don&rsquo;t see what you&rsquo;re looking for?{" "}
+              <a
+                href="mailto:owenscgtx@gmail.com"
+                className="text-accent underline-offset-4 hover:underline"
+              >
+                Email us
+              </a>
+              .
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <img
+              src={lakeSphereImage}
+              alt="Glass sphere resting on calm lake water at sunset"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
