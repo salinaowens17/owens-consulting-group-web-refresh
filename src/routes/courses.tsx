@@ -16,6 +16,7 @@ import {
   ONLINE_REGISTRATION_PDF,
 } from "@/lib/registration-forms";
 import landfillAerial from "@/assets/courses-hero-pier.jpeg";
+import cprBadge from "@/assets/cpr-first-aid-aed-certified.png";
 
 export const Route = createFileRoute("/courses")({
   head: () => ({
