@@ -85,6 +85,11 @@ export function SiteFooter() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link to="/faq" className="text-primary-foreground/80 hover:text-accent">
+                FAQs
+              </Link>
+            </li>
           </ul>
         </div>
 
