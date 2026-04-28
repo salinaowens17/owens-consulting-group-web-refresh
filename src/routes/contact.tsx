@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Send, ShieldCheck } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 import hummingbirdImage from "@/assets/hummingbird.jpg";
+import cowImage from "@/assets/cow.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -114,6 +115,14 @@ function ContactPage() {
                 </div>
               </li>
             </ul>
+
+            <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+              <img
+                src={cowImage}
+                alt="Brown cow grazing in an alpine pasture beneath a clear blue sky"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
 
           <div>
