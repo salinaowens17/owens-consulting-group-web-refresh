@@ -6,7 +6,7 @@ import heroTeaching from "@/assets/ocg-logo-hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Owens Consulting Group — TCEQ-Approved Environmental Training in Texas" },
+      { title: "Owens Consulting Group, LLC — TCEQ-Approved Environmental Training in Texas" },
       {
         name: "description",
         content:
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Owens Consulting Group — TCEQ-Approved Environmental Training",
+        content: "Owens Consulting Group, LLC — TCEQ-Approved Environmental Training",
       },
       {
         property: "og:description",
