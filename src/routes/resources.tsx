@@ -96,7 +96,7 @@ function ResourcesPage() {
               </span>
               <div>
                 <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
-                  For employees
+                  Chemical Inventory Audit
                 </p>
                 <h2 className="font-serif text-xl font-semibold text-primary">
                   Safety Data Sheets (SDS)
