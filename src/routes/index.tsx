@@ -42,12 +42,10 @@ function HomePage() {
                 TCEQ Provider #782
               </span>
               <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
-                TCEQ-approved training provider in Texas.
+                OCG is a TCEQ-approved, MSW-licensed training provider
               </h1>
               <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
-                From MSW supervisor licensing and waste screening to chemical inventory
-                audits and site-specific SOP training, Owens Consulting Group helps Texas
-                facilities and professionals stay licensed, compliant, and prepared.
+                OCG is a TCEQ-approved, MSW-licensed training provider.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
                 <Link
