@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, ShieldCheck } from "lucide-react";
 import ocgLogo from "@/assets/ocg-logo.png";
 import certWbe from "@/assets/cert-wbe.gif";
-import certHoustonSeal from "@/assets/cert-houston-seal.gif";
+import certTexasHub from "@/assets/cert-texas-hub.jpg";
 import certHoustonObo from "@/assets/cert-houston-obo.jpeg";
 import certTdlr from "@/assets/cert-tdlr.jpg";
 import certSam from "@/assets/cert-sam.jpg";
