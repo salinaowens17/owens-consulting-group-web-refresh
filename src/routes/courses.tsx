@@ -43,7 +43,7 @@ export const Route = createFileRoute("/courses")({
 const courses = [
   {
     code: "TCEQ Course #513",
-    title: "MSW A Supervisor Licensing",
+    title: "MSW A Supervisor Licensing Course",
     duration: "24 hours",
     audience:
       "Supervisors of Type I, IAE, IV and Type IVAE landfills, and Type IX landfill mining operations",
@@ -51,7 +51,7 @@ const courses = [
   },
   {
     code: "TCEQ Course #514",
-    title: "MSW B Supervisor Licensing",
+    title: "MSW B Supervisor Licensing Course",
     duration: "24 hours",
     audience:
       "Supervisors of Processing Facilities, including recycling, composting, and medical waste management facilities",
