@@ -29,6 +29,7 @@ export function SiteFooter() {
           <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-6">
             {certifications.map((cert) => {
               const isHouston = cert.alt.includes("City of Houston");
+              const isNrep = cert.alt.includes("NREP");
               return (
                 <li key={cert.alt} className="flex items-center justify-center">
                   <img
@@ -39,7 +40,7 @@ export function SiteFooter() {
                     width={240}
                     height={240}
                     className={`w-auto object-contain transition-opacity hover:opacity-100 ${
-                      isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
+                      isNrep ? "h-48 md:h-60" : isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
                     }`}
                   />
                 </li>
