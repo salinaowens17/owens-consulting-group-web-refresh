@@ -128,8 +128,8 @@ function CoursesAndServicesPage() {
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                 TCEQ-approved supervisor licensing courses and on-site environmental
-                compliance services. All of our courses meet the requirements to renew a current
-                MSW License.
+                compliance services. All of our courses meet the requirements to
+                obtain an initial MSW license and renew a current MSW license.
               </p>
               <div className="mt-8 flex flex-col gap-3">
                 <div className="flex flex-wrap gap-3">
