@@ -102,6 +102,7 @@ function HomePage() {
             title="In-person Training"
             body="Scheduled in-person classes across Texas covering MSW A & B supervisor licensing, waste screening, and specialized medical waste."
             to="/schedules"
+            hash="in-person"
             cta="View in-person schedule"
           />
           <HighlightCard
