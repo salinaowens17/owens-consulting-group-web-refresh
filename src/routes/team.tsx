@@ -116,7 +116,10 @@ function TeamPage() {
                       alt={`Portrait of ${member.name}`}
                       loading="lazy"
                       className="h-full w-full object-cover"
-                      style={member.photoPosition ? { objectPosition: member.photoPosition } : undefined}
+                      style={{
+                        ...(member.photoPosition ? { objectPosition: member.photoPosition } : {}),
+                        ...(member.photoScale ? { transform: `scale(${member.photoScale})` } : {}),
+                      }}
                     />
                   </div>
                 ) : (
