@@ -26,7 +26,7 @@ export function SiteFooter() {
           <p className="text-center font-serif text-xs font-semibold uppercase tracking-[0.22em] text-primary/70">
             Certifications & Affiliations
           </p>
-          <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-5">
+          <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-6">
             {certifications.map((cert) => {
               const isHouston = cert.alt.includes("City of Houston");
               return (
