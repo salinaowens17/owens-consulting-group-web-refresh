@@ -41,6 +41,7 @@ type Member = {
   title: string;
   photo?: string;
   photoPosition?: string;
+  photoScale?: number;
   badges?: Credential[];
 };
 
