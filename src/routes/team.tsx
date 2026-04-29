@@ -9,6 +9,7 @@ import teamBrad from "@/assets/team-brad.jpeg";
 import credChmm from "@/assets/cred-chmm.png";
 import credTxGeo from "@/assets/cred-tx-geoscientists.png";
 import credAipg from "@/assets/cred-aipg.png";
+import credNrep from "@/assets/nrep-logo.png";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
