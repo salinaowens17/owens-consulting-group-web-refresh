@@ -6,6 +6,7 @@ import certTexasHub from "@/assets/cert-texas-hub.jpg";
 import certHoustonObo from "@/assets/cert-houston-obo.png";
 import certTdlr from "@/assets/cert-tdlr.png";
 import certSam from "@/assets/cert-sam.jpg";
+import certNrep from "@/assets/nrep-logo.png";
 
 const certifications = [
   { src: certWbe, alt: "Certified Women's Business Enterprise" },
@@ -13,6 +14,7 @@ const certifications = [
   { src: certTexasHub, alt: "Statewide Historically Underutilized Business Program" },
   { src: certHoustonObo, alt: "City of Houston Mayor's Office of Business Opportunity" },
   { src: certSam, alt: "System for Award Management" },
+  { src: certNrep, alt: "National Registry of Environmental Professionals (NREP)" },
 ];
 
 export function SiteFooter() {
