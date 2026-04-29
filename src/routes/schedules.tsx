@@ -39,11 +39,11 @@ type Session = {
 
 const inPersonSessions: Session[] = [
   {
-    date: "Feb 10–12, 2026",
-    course: "TBD",
+    date: "July 21st - 23rd, 2026",
+    course: "​MSW A",
     code: "TCEQ #513",
     duration: "24 hours",
-    location: "TBD",
+    location: "Weslaco, Texas",
     seats: "Seats available",
   },
   {
