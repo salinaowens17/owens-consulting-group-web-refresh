@@ -9,6 +9,7 @@ import teamBrad from "@/assets/team-brad.jpeg";
 import credChmm from "@/assets/cred-chmm.png";
 import credTxGeo from "@/assets/cred-tx-geoscientists.png";
 import credAipg from "@/assets/cred-aipg.png";
+import credNrep from "@/assets/nrep-logo.png";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -51,7 +52,10 @@ const team: Member[] = [
     credentials: "CHMM, REM",
     title: "CEO",
     photo: teamJulie,
-    badges: [{ src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" }],
+    badges: [
+      { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
+      { src: credNrep, alt: "National Registry of Environmental Professionals (NREP)" },
+    ],
   },
   {
     name: "Erasmo Yarrito Jr.",

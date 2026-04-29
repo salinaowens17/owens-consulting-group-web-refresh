@@ -6,7 +6,6 @@ import certTexasHub from "@/assets/cert-texas-hub.jpg";
 import certHoustonObo from "@/assets/cert-houston-obo.png";
 import certTdlr from "@/assets/cert-tdlr.png";
 import certSam from "@/assets/cert-sam.jpg";
-import certNrep from "@/assets/nrep-logo.png";
 
 const certifications = [
   { src: certWbe, alt: "Certified Women's Business Enterprise" },
@@ -14,7 +13,6 @@ const certifications = [
   { src: certTexasHub, alt: "Statewide Historically Underutilized Business Program" },
   { src: certHoustonObo, alt: "City of Houston Mayor's Office of Business Opportunity" },
   { src: certSam, alt: "System for Award Management" },
-  { src: certNrep, alt: "National Registry of Environmental Professionals (NREP)" },
 ];
 
 export function SiteFooter() {
@@ -29,7 +27,6 @@ export function SiteFooter() {
           <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-6">
             {certifications.map((cert) => {
               const isHouston = cert.alt.includes("City of Houston");
-              const isNrep = cert.alt.includes("NREP");
               return (
                 <li key={cert.alt} className="flex items-center justify-center">
                   <img
@@ -40,7 +37,7 @@ export function SiteFooter() {
                     width={240}
                     height={240}
                     className={`w-auto object-contain transition-opacity hover:opacity-100 ${
-                      isNrep ? "h-48 md:h-60" : isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
+                      isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
                     }`}
                   />
                 </li>
