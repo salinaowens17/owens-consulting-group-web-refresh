@@ -375,6 +375,7 @@ function CoursesAndServicesPage() {
         <div className="grid gap-4 rounded-2xl border border-border bg-surface p-8 md:grid-cols-2 md:gap-8 md:p-10">
           <Link
             to="/schedules"
+            hash="online"
             className="group flex items-start gap-4 rounded-xl p-2 transition-colors hover:bg-background"
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
@@ -394,6 +395,7 @@ function CoursesAndServicesPage() {
           </Link>
           <Link
             to="/schedules"
+            hash="in-person"
             className="group flex items-start gap-4 rounded-xl p-2 transition-colors hover:bg-background"
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
