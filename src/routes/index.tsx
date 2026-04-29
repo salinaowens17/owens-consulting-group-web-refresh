@@ -93,6 +93,7 @@ function HomePage() {
             title="Online Courses"
             body="Providing current and new MSW Supervisors TCEQ approved courses to obtain an initial license and CEUs to maintain a current license. Online classes are conducted on the WebEx platform with a live instructor. "
             to="/schedules"
+            hash="online"
             cta="View online schedule"
             featured
           />
