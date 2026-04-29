@@ -494,7 +494,8 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
               ))}
             </ul>
           </article>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
