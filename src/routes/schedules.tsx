@@ -266,8 +266,7 @@ function SchedulesPage() {
               </a>
             </div>
             <p className="mt-5 text-xs text-muted-foreground">
-              Prototype note: dates shown below are placeholders for your client to review the
-              layout. Real dates can be swapped in once confirmed.
+              ​
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
