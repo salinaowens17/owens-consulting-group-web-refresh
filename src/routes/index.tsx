@@ -135,7 +135,7 @@ function HomePage() {
             eyebrow="Certification"
             title="First Aid / CPR / AED"
             body="Nationally recognized First Aid, CPR, and AED certification for adults. Includes a 2-year certification card upon successful completion."
-            to="/courses"
+            to="/contact"
             cta="Contact us"
           />
         </div>
