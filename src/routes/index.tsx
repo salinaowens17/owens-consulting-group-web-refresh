@@ -128,7 +128,7 @@ function HomePage() {
             eyebrow="On-site service"
             title="Chemical Inventory Audits"
             body="Comprehensive review of on-site chemicals with current Safety Data Sheets in accordance with OSHA Standard 29 CFR 1910.1200(g)."
-            to="/courses"
+            href="mailto:owenscgtx@gmail.com?subject=Chemical%20Inventory%20Audit%20Request"
             cta="Request an audit"
           />
           <HighlightCard
