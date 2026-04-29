@@ -52,7 +52,10 @@ const team: Member[] = [
     credentials: "CHMM, REM",
     title: "CEO",
     photo: teamJulie,
-    badges: [{ src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" }],
+    badges: [
+      { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
+      { src: credNrep, alt: "National Registry of Environmental Professionals (NREP)" },
+    ],
   },
   {
     name: "Erasmo Yarrito Jr.",
