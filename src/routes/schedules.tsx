@@ -338,7 +338,7 @@ function ScheduleSection({
   sessions: Session[];
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+    <section id="in-person" className="mx-auto max-w-6xl px-5 py-20 md:px-8 scroll-mt-24">
       <div>
         <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-accent">
           <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent/10">

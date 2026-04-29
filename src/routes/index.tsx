@@ -102,6 +102,7 @@ function HomePage() {
             title="In-person Training"
             body="Scheduled in-person classes across Texas covering MSW A & B supervisor licensing, waste screening, and specialized medical waste."
             to="/schedules"
+            hash="in-person"
             cta="View in-person schedule"
           />
           <HighlightCard
@@ -181,6 +182,7 @@ function HighlightCard({
   body,
   to,
   cta,
+  hash,
   featured,
 }: {
   icon: React.ReactNode;
@@ -189,6 +191,7 @@ function HighlightCard({
   body: string;
   to: "/courses" | "/resources" | "/contact" | "/schedules";
   cta: string;
+  hash?: string;
   featured?: boolean;
 }) {
   return (
@@ -220,6 +223,7 @@ function HighlightCard({
       <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
       <Link
         to={to}
+        hash={hash}
         className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
       >
         {cta} <ArrowRight className="h-4 w-4" />
