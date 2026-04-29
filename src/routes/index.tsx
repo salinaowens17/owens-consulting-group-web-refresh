@@ -185,17 +185,21 @@ function HighlightCard({
   to,
   cta,
   hash,
+  href,
   featured,
 }: {
   icon: React.ReactNode;
   eyebrow: string;
   title: string;
   body: string;
-  to: "/courses" | "/resources" | "/contact" | "/schedules";
+  to?: "/courses" | "/resources" | "/contact" | "/schedules";
   cta: string;
   hash?: string;
+  href?: string;
   featured?: boolean;
 }) {
+  const ctaClass =
+    "mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline";
   return (
     <article
       className={
@@ -223,13 +227,15 @@ function HighlightCard({
       </span>
       <h3 className="mt-2 font-serif text-xl font-semibold text-primary">{title}</h3>
       <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
-      <Link
-        to={to}
-        hash={hash}
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
-      >
-        {cta} <ArrowRight className="h-4 w-4" />
-      </Link>
+      {href ? (
+        <a href={href} className={ctaClass}>
+          {cta} <ArrowRight className="h-4 w-4" />
+        </a>
+      ) : (
+        <Link to={to!} hash={hash} className={ctaClass}>
+          {cta} <ArrowRight className="h-4 w-4" />
+        </Link>
+      )}
     </article>
   );
 }
