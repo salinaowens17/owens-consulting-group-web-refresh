@@ -34,7 +34,7 @@ export const Route = createFileRoute("/team")({
   component: TeamPage,
 });
 
-type Credential = { src: string; alt: string };
+type Credential = { src: string; alt: string; className?: string };
 
 type Member = {
   name: string;
@@ -54,7 +54,11 @@ const team: Member[] = [
     photo: teamJulie,
     badges: [
       { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
-      { src: credNrep, alt: "National Registry of Environmental Professionals (NREP)" },
+      {
+        src: credNrep,
+        alt: "National Registry of Environmental Professionals (NREP)",
+        className: "h-10 w-auto object-contain",
+      },
     ],
   },
   {
@@ -150,7 +154,7 @@ function TeamPage() {
                         alt={badge.alt}
                         title={badge.alt}
                         loading="lazy"
-                        className="h-16 w-auto object-contain"
+                        className={badge.className ?? "h-16 w-auto object-contain"}
                       />
                     ))}
                   </div>
