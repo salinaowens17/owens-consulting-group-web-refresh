@@ -34,7 +34,7 @@ export const Route = createFileRoute("/team")({
   component: TeamPage,
 });
 
-type Credential = { src: string; alt: string };
+type Credential = { src: string; alt: string; className?: string };
 
 type Member = {
   name: string;
