@@ -54,11 +54,7 @@ const team: Member[] = [
     photo: teamJulie,
     badges: [
       { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
-      {
-        src: credNrep,
-        alt: "National Registry of Environmental Professionals (NREP)",
-        className: "h-10 w-auto object-contain",
-      },
+      { src: credNrep, alt: "National Registry of Environmental Professionals (NREP)" },
     ],
   },
   {
