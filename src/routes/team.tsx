@@ -73,7 +73,7 @@ const team: Member[] = [
     credentials: "AIPG, PG",
     title: "International Landfill Operations & Remediation Expert",
     photo: teamGordon,
-    photoPosition: "center 38%",
+    photoPosition: "48% 60%",
     photoScale: 1.8,
     badges: [
       { src: credTxGeo, alt: "Texas Board of Professional Geoscientists" },
