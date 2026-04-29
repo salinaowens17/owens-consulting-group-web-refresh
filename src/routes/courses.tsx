@@ -263,9 +263,7 @@ function CoursesAndServicesPage() {
               Environmental compliance services
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Beyond training, we partner with Texas operators on the everyday work of staying
-              compliant — from site-specific SOP training to comprehensive chemical inventory
-              audits.
+              We provide various services such as site-specific SOP training and chemical inventory audits.
             </p>
           </div>
 
