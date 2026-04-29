@@ -24,7 +24,7 @@ export function SiteFooter() {
           <p className="text-center font-serif text-xs font-semibold uppercase tracking-[0.22em] text-primary/70">
             Certifications & Affiliations
           </p>
-          <ul className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-6">
+          <ul className="mt-8 grid grid-cols-2 items-center justify-items-center gap-10 sm:grid-cols-3 md:grid-cols-5">
             {certifications.map((cert) => {
               const isHouston = cert.alt.includes("City of Houston");
               return (
@@ -34,10 +34,10 @@ export function SiteFooter() {
                     alt={cert.alt}
                     title={cert.alt}
                     loading="lazy"
-                    width={240}
-                    height={240}
+                    width={320}
+                    height={320}
                     className={`w-auto object-contain transition-opacity hover:opacity-100 ${
-                      isHouston ? "h-40 md:h-52" : "h-32 md:h-40"
+                      isHouston ? "h-60 md:h-[19.5rem]" : "h-48 md:h-60"
                     }`}
                   />
                 </li>
