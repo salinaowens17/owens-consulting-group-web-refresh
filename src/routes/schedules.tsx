@@ -440,10 +440,16 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
       </div>
 
       <div className="mt-10 space-y-8">
-        {groupList.map((group) => (
+        {groupList.map((group) => {
+          const slug = group.course
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)/g, "");
+          return (
           <article
             key={`${group.course}-${group.code}`}
-            className="overflow-hidden rounded-2xl border border-border bg-card"
+            id={slug}
+            className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-card"
           >
             <header className="flex flex-col gap-2 border-b border-border bg-surface px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8">
               <div className="flex items-center gap-3">
