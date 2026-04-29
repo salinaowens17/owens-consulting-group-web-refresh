@@ -65,8 +65,8 @@ const team: Member[] = [
     credentials: "Solid Waste Industry Expert",
     title: "Instructor",
     photo: teamDavid,
-    photoPosition: "center 15%",
-    photoScale: 1.15,
+    photoPosition: "center 8%",
+    photoScale: 1,
   },
   {
     name: "Gordon Spradley",
