@@ -41,6 +41,7 @@ type Member = {
   title: string;
   photo?: string;
   photoPosition?: string;
+  photoScale?: number;
   badges?: Credential[];
 };
 
@@ -64,7 +65,8 @@ const team: Member[] = [
     credentials: "Solid Waste Industry Expert",
     title: "Instructor",
     photo: teamDavid,
-    photoPosition: "center 18%",
+    photoPosition: "center 22%",
+    photoScale: 1.5,
   },
   {
     name: "Gordon Spradley",
@@ -114,7 +116,10 @@ function TeamPage() {
                       alt={`Portrait of ${member.name}`}
                       loading="lazy"
                       className="h-full w-full object-cover"
-                      style={member.photoPosition ? { objectPosition: member.photoPosition } : undefined}
+                      style={{
+                        ...(member.photoPosition ? { objectPosition: member.photoPosition } : {}),
+                        ...(member.photoScale ? { transform: `scale(${member.photoScale})` } : {}),
+                      }}
                     />
                   </div>
                 ) : (
