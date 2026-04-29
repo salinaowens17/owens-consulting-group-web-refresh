@@ -119,7 +119,8 @@ function HomePage() {
             eyebrow="TDLR"
             title="TDLR Code Enforcement Officer License CEUs — Waste Screening Course #341"
             body="An 8-hour course approved by TDLR for Code Enforcement Officers' License continuing education credits."
-            to="/courses"
+            to="/schedules"
+            hash="waste-screening"
             cta="Course details"
           />
           <HighlightCard
