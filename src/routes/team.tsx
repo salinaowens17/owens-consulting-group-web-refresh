@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
 import teamJulie from "@/assets/team-julie.jpg";
 import teamErasmo from "@/assets/team-erasmo.jpg";
+import teamDavid from "@/assets/team-david.jpg";
 import teamGordon from "@/assets/team-gordon.jpg";
 import teamMonica from "@/assets/team-monica.jpeg";
 import teamBrad from "@/assets/team-brad.jpeg";
@@ -62,6 +63,8 @@ const team: Member[] = [
     name: "David Dugger",
     credentials: "Solid Waste Industry Expert",
     title: "Instructor",
+    photo: teamDavid,
+    photoPosition: "center 18%",
   },
   {
     name: "Gordon Spradley",
