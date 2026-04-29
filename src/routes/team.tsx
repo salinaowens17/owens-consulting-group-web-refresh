@@ -154,7 +154,7 @@ function TeamPage() {
                         alt={badge.alt}
                         title={badge.alt}
                         loading="lazy"
-                        className="h-16 w-auto object-contain"
+                        className={badge.className ?? "h-16 w-auto object-contain"}
                       />
                     ))}
                   </div>
