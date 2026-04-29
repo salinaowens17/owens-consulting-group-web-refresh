@@ -395,6 +395,7 @@ function CoursesAndServicesPage() {
           </Link>
           <Link
             to="/schedules"
+            hash="in-person"
             className="group flex items-start gap-4 rounded-xl p-2 transition-colors hover:bg-background"
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
