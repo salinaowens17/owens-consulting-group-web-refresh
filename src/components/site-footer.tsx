@@ -17,7 +17,7 @@ const certifications = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-primary text-primary-foreground">
+    <footer className="border-t border-border bg-primary text-primary-foreground">
       {/* Certifications strip */}
       <div className="border-b border-primary-foreground/10 bg-primary-foreground">
         <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
