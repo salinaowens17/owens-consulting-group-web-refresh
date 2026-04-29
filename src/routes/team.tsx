@@ -103,7 +103,7 @@ function TeamPage() {
             Meet the Team
           </p>
           <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
-            Our instructors
+            Our team
           </h1>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member) => (
