@@ -82,7 +82,7 @@ function HomePage() {
             What we do
           </span>
           <h2 className="mt-3 font-serif text-3xl font-semibold text-primary md:text-4xl">
-            Providing the MSW-regulated community with a nuanced understanding of TCEQ regulations and current industry standards and practices.
+            Providing the MSW-regulated community with a multi-faceted understanding of TCEQ regulations and current industry standards and practices.
           </h2>
         </div>
 
