@@ -129,6 +129,14 @@ function ContactPage() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
+                const form = e.currentTarget as HTMLFormElement;
+                const data = new FormData(form);
+                const name = String(data.get("name") || "");
+                const email = String(data.get("email") || "");
+                const subject = String(data.get("subject") || "Inquiry from website");
+                const message = String(data.get("message") || "");
+                const body = `Name: ${name}%0AEmail: ${email}%0A%0A${encodeURIComponent(message)}`;
+                window.location.href = `mailto:owenscgtx@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
                 setSubmitted(true);
               }}
               className="rounded-2xl border border-border bg-card p-7 md:p-9"
