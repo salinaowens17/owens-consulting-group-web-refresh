@@ -182,10 +182,6 @@ function ContactPage() {
                 </div>
               )}
 
-              <p className="mt-4 text-[11px] text-muted-foreground">
-                Prototype note: this contact form is front-end only and can be wired to email
-                delivery later.
-              </p>
             </form>
           </div>
         </div>
