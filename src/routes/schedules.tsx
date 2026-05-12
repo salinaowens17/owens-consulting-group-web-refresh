@@ -145,14 +145,6 @@ const onlineSessions: Session[] = [
   },
   // MSW B — 8 slots
   {
-    date: "May 5th - 7th, 2026",
-    course: "MSW B Supervisor Licensing Course",
-    code: "TCEQ #514",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
-  {
     date: "June 30th - July 2nd, 2026",
     course: "MSW B Supervisor Licensing Course",
     code: "TCEQ #514",
