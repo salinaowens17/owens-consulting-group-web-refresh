@@ -308,7 +308,7 @@ function SchedulesPage() {
         </div>
       </section>
 
-      <OnlineScheduleSection sessions={onlineSessions} />
+      <OnlineScheduleSection sessions={onlineSessions.filter(isUpcoming)} />
 
       <div className="border-t border-border" />
 
@@ -317,7 +317,7 @@ function SchedulesPage() {
         icon={<Users className="h-5 w-5" />}
         title="In-person classes across Texas"
         description="Hands-on instruction at venues in Houston and the Lower Rio Grande Valley."
-        sessions={inPersonSessions}
+        sessions={inPersonSessions.filter(isUpcoming)}
       />
 
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
