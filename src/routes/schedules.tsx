@@ -173,14 +173,6 @@ const onlineSessions: Session[] = [
   },
   // Waste Screening — 5 slots
   {
-    date: "​May 8th, 2026",
-    course: "Waste Screening",
-    code: "TCEQ #341",
-    duration: "8 hours · live virtual",
-    location: "Online",
-    seats: "Open enrollment",
-  },
-  {
     date: "July 3rd, 2026",
     course: "Waste Screening",
     code: "TCEQ #341",
