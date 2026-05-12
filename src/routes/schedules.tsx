@@ -37,6 +37,43 @@ type Session = {
   seats: string;
 };
 
+const MONTHS: Record<string, number> = {
+  january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+  july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+};
+
+/**
+ * Parse a session date string and return the END date of the session.
+ * Returns null for unparseable strings (e.g. "TBD", "Date TBD") so they're kept.
+ * Examples:
+ *   "May 8th, 2026"           -> 2026-05-08
+ *   "July 21st - 23rd, 2026"  -> 2026-07-23
+ *   "June 2nd - 4th, 2026"    -> 2026-06-04
+ */
+function parseSessionEndDate(input: string): Date | null {
+  const cleaned = input.replace(/\u200B/g, "").trim();
+  const monthMatch = cleaned.match(/(january|february|march|april|may|june|july|august|september|october|november|december)/i);
+  const yearMatch = cleaned.match(/(\d{4})/);
+  if (!monthMatch || !yearMatch) return null;
+  const month = MONTHS[monthMatch[1].toLowerCase()];
+  const year = parseInt(yearMatch[1], 10);
+  const days = Array.from(cleaned.matchAll(/(\d{1,2})(?:st|nd|rd|th)?/g))
+    .map((m) => parseInt(m[1], 10))
+    .filter((n) => n >= 1 && n <= 31);
+  if (days.length === 0) return null;
+  const day = days[days.length - 1];
+  return new Date(year, month, day);
+}
+
+function isUpcoming(session: Session): boolean {
+  const end = parseSessionEndDate(session.date);
+  if (!end) return true;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return end.getTime() >= today.getTime();
+}
+
+
 const inPersonSessions: Session[] = [
   {
     date: "July 21st - 23rd, 2026",
