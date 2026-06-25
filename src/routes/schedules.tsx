@@ -52,15 +52,19 @@ const MONTHS: Record<string, number> = {
  */
 function parseSessionEndDate(input: string): Date | null {
   const cleaned = input.replace(/\u200B/g, "").trim();
-  const monthMatch = cleaned.match(/(january|february|march|april|may|june|july|august|september|october|november|december)/i);
+  const monthMatches = Array.from(cleaned.matchAll(/(january|february|march|april|may|june|july|august|september|october|november|december)/gi));
   const yearMatch = cleaned.match(/(\d{4})/);
-  if (!monthMatch || !yearMatch) return null;
-  const month = MONTHS[monthMatch[1].toLowerCase()];
+  if (monthMatches.length === 0 || !yearMatch) return null;
   const year = parseInt(yearMatch[1], 10);
-  const days = Array.from(cleaned.matchAll(/(\d{1,2})(?:st|nd|rd|th)?/g))
-    .map((m) => parseInt(m[1], 10))
-    .filter((n) => n >= 1 && n <= 31);
+  // Require ordinal suffix so digits inside the year aren't matched
+  const days = Array.from(cleaned.matchAll(/(\d{1,2})(st|nd|rd|th)/g))
+    .map((m) => parseInt(m[1], 10));
   if (days.length === 0) return null;
+  // If the last day is earlier than the first day, the range spans into the next month
+  const monthIdx = (monthMatches.length > 1 && days.length > 1 && days[days.length - 1] < days[0])
+    ? monthMatches.length - 1
+    : 0;
+  const month = MONTHS[monthMatches[monthIdx][1].toLowerCase()];
   const day = days[days.length - 1];
   return new Date(year, month, day);
 }
