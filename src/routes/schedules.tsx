@@ -35,6 +35,7 @@ type Session = {
   duration: string;
   location: string;
   seats: string;
+  formUrl?: string;
 };
 
 const MONTHS: Record<string, number> = {
@@ -239,12 +240,13 @@ const onlineSessions: Session[] = [
   },
   // Waste Screening En Español — 1 slot
   {
-    date: "Date TBD",
+    date: "August 12th, 2026",
     course: "Waste Screening En Español",
     code: "TCEQ #341",
     duration: "8 hours · live virtual",
     location: "Online",
     seats: "Open enrollment",
+    formUrl: "/08-2026-Registration-Form.pdf",
   },
   {
     date: "Date TBD",
@@ -507,7 +509,7 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
                     <div className="text-sm text-muted-foreground">{s.duration}</div>
                   </div>
                   <a
-                    href={ONLINE_REGISTRATION_PDF}
+                    href={s.formUrl ?? ONLINE_REGISTRATION_PDF}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
