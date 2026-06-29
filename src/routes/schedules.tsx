@@ -509,7 +509,7 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
                     <div className="text-sm text-muted-foreground">{s.duration}</div>
                   </div>
                   <a
-                    href={ONLINE_REGISTRATION_PDF}
+                    href={s.formUrl ?? ONLINE_REGISTRATION_PDF}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
