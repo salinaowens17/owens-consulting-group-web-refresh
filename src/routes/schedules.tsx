@@ -35,6 +35,7 @@ type Session = {
   duration: string;
   location: string;
   seats: string;
+  formUrl?: string;
 };
 
 const MONTHS: Record<string, number> = {
