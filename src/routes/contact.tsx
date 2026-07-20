@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Send, ShieldCheck } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
-import hummingbirdImage from "@/assets/hummingbird.jpg";
+import contactSwingImage from "@/assets/contact-swing.jpeg.asset.json";
 import cowImage from "@/assets/cow.jpg";
 
 export const Route = createFileRoute("/contact")({
@@ -45,8 +45,8 @@ function ContactPage() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
             <img
-              src={hummingbirdImage}
-              alt="Hummingbird in flight beside vibrant orange flowers"
+              src={contactSwingImage.url}
+              alt="Wooden swing standing in shallow turquoise water with an island in the distance"
               className="h-full w-full object-cover"
             />
           </div>
