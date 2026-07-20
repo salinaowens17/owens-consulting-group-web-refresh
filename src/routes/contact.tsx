@@ -45,8 +45,8 @@ function ContactPage() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
             <img
-              src={hummingbirdImage}
-              alt="Hummingbird in flight beside vibrant orange flowers"
+              src={contactSwingImage.url}
+              alt="Wooden swing standing in shallow turquoise water with an island in the distance"
               className="h-full w-full object-cover"
             />
           </div>
