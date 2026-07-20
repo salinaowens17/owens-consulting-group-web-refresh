@@ -350,8 +350,8 @@ function FaqPage() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
             <img
-              src={lakeSphereImage}
-              alt="Glass sphere resting on calm lake water at sunset"
+              src={faqBeachImage.url}
+              alt="Tropical beach with palm trees overlooking turquoise ocean water"
               className="h-full w-full object-cover"
             />
           </div>
