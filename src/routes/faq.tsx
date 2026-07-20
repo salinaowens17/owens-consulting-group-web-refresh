@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
-import lakeSphereImage from "@/assets/lake-sphere.jpg";
+import faqBeachImage from "@/assets/faq-beach.jpeg.asset.json";
 import {
   Accordion,
   AccordionContent,
