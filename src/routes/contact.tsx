@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Send, ShieldCheck } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
-import hummingbirdImage from "@/assets/hummingbird.jpg";
+import contactSwingImage from "@/assets/contact-swing.jpeg.asset.json";
 import cowImage from "@/assets/cow.jpg";
 
 export const Route = createFileRoute("/contact")({
