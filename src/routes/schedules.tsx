@@ -249,12 +249,13 @@ const onlineSessions: Session[] = [
     formUrl: "/08-2026-Registration-Form.pdf",
   },
   {
-    date: "Date TBD",
+    date: "August 31st, 2026",
     course: "Specialized Medical Waste",
     code: "TCEQ #1390",
     duration: "8 hours · live virtual",
     location: "Online",
     seats: "Open enrollment",
+    formUrl: "/08-31-2026-Registration-Form.pdf",
   },
 ];
 
