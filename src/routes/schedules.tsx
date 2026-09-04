@@ -132,14 +132,6 @@ const onlineSessions: Session[] = [
     location: "Online (Zoom)",
     seats: "Seats available",
   },
-  {
-    date: "Date TBD",
-    course: "MSW A Supervisor Licensing Course",
-    code: "TCEQ #513",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
   // MSW B — 8 slots
   {
     date: "June 30th - July 2nd, 2026",
