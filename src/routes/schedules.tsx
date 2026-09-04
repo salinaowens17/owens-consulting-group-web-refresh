@@ -104,14 +104,6 @@ const inPersonSessions: Session[] = [
     location: "Weslaco, Texas",
     seats: "Seats available",
   },
-  {
-    date: "TBD",
-    course: "MSW B",
-    code: "TCEQ #514",
-    duration: "24 hours",
-    location: "Houston, Texas",
-    seats: "Seats available",
-  },
 ];
 
 const onlineSessions: Session[] = [
