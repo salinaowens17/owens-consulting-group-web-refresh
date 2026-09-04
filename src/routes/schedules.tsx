@@ -181,30 +181,6 @@ const onlineSessions: Session[] = [
     location: "Online (Zoom)",
     seats: "Seats available",
   },
-  {
-    date: "Date TBD",
-    course: "MSW B Supervisor Licensing Course",
-    code: "TCEQ #514",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
-  {
-    date: "Date TBD",
-    course: "MSW B Supervisor Licensing Course",
-    code: "TCEQ #514",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
-  {
-    date: "Date TBD",
-    course: "MSW B Supervisor Licensing Course",
-    code: "TCEQ #514",
-    duration: "24 hours · live virtual",
-    location: "Online (Zoom)",
-    seats: "Seats available",
-  },
   // Waste Screening — 5 slots
   {
     date: "July 3rd, 2026",
