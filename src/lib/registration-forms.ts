@@ -4,4 +4,4 @@
 
 export const IN_PERSON_REGISTRATION_PDF = "/2026-02_In-person_registration_form.pdf";
 
-export const ONLINE_REGISTRATION_PDF = "/09.1-2026-Registration-Form.pdf";
+export const ONLINE_REGISTRATION_PDF = "/10.0-2026_Registration_Form.pdf";
