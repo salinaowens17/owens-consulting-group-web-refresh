@@ -71,6 +71,7 @@ const team: Member[] = [
     name: "David Dugger",
     credentials: "Solid Waste Industry Expert",
     title: "Instructor",
+    bio: "David has over 40 years of experience in Solid Waste Operations and Solid Waste International interface and outreach in Africa and Eastern Europe.",
     photo: teamDavid,
     photoPosition: "center 8%",
     photoScale: 1,
