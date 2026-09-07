@@ -40,6 +40,7 @@ type Member = {
   name: string;
   credentials: string;
   title: string;
+  bio?: string;
   photo?: string;
   photoPosition?: string;
   photoScale?: number;
