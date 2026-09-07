@@ -68,15 +68,6 @@ const team: Member[] = [
     photoPosition: "center 30%",
   },
   {
-    name: "David Dugger",
-    credentials: "Solid Waste Industry Expert",
-    title: "Instructor",
-    bio: "David has over 40 years of experience in Solid Waste Operations and Solid Waste International interface and outreach in Africa and Eastern Europe.",
-    photo: teamDavid,
-    photoPosition: "center 8%",
-    photoScale: 1,
-  },
-  {
     name: "Gordon Spradley",
     credentials: "AIPG, PG",
     title: "International Landfill Operations & Remediation Expert",
@@ -88,6 +79,15 @@ const team: Member[] = [
       { src: credTxGeo, alt: "Texas Board of Professional Geoscientists" },
       { src: credAipg, alt: "American Institute of Professional Geologists (AIPG)" },
     ],
+  },
+  {
+    name: "David Dugger",
+    credentials: "Solid Waste Industry Expert",
+    title: "Instructor",
+    bio: "David has over 40 years of experience in Solid Waste Operations and Solid Waste International interface and outreach in Africa and Eastern Europe.",
+    photo: teamDavid,
+    photoPosition: "center 8%",
+    photoScale: 1,
   },
   {
     name: "Brad Newton",
