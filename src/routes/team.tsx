@@ -79,6 +79,7 @@ const team: Member[] = [
     name: "Gordon Spradley",
     credentials: "AIPG, PG",
     title: "International Landfill Operations & Remediation Expert",
+    bio: "Gordon brings over 40 years of experience in Solid Waste operations and Hazardous Waste Superfund site remediation. His extensive expertise has taken him all over the U.S as well as Puerto Rico and the Bahamas.",
     photo: teamGordon,
     photoPosition: "center 30%",
     photoScale: 1.1,
