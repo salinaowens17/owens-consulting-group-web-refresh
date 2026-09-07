@@ -63,6 +63,7 @@ const team: Member[] = [
     name: "Erasmo Yarrito Jr.",
     credentials: "Solid Waste Industry Expert",
     title: "Senior Instructor",
+    bio: "Moe has over 25 years of experience as a former TCEQ Sr. Investigator, Program Manager, and Rio Grande Water Master. He has taught the MSW Supervisor courses since 2015.",
     photo: teamErasmo,
     photoPosition: "center 30%",
   },
