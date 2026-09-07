@@ -40,6 +40,7 @@ type Member = {
   name: string;
   credentials: string;
   title: string;
+  bio?: string;
   photo?: string;
   photoPosition?: string;
   photoScale?: number;
@@ -51,6 +52,7 @@ const team: Member[] = [
     name: "Julie Spradley",
     credentials: "CHMM, REM",
     title: "CEO",
+    bio: "With over 35 years of experience in the Solid Waste industry, Julie has worked as a Sr. TCEQ Investigator, completed extensive groundwater fieldwork, and provided environmental training and consulting. She formed OCG in 2010.",
     photo: teamJulie,
     badges: [
       { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
@@ -140,6 +142,9 @@ function TeamPage() {
                 <h2 className="font-serif text-xl font-semibold text-primary">{member.name}</h2>
                 <p className="mt-1 text-sm font-medium text-accent">{member.credentials}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{member.title}</p>
+                {member.bio ? (
+                  <p className="mt-3 text-sm leading-relaxed text-foreground/90">{member.bio}</p>
+                ) : null}
 
                 {member.badges && member.badges.length > 0 ? (
                   <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border/60 pt-4">
