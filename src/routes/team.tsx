@@ -142,6 +142,9 @@ function TeamPage() {
                 <h2 className="font-serif text-xl font-semibold text-primary">{member.name}</h2>
                 <p className="mt-1 text-sm font-medium text-accent">{member.credentials}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{member.title}</p>
+                {member.bio ? (
+                  <p className="mt-3 text-sm leading-relaxed text-foreground/90">{member.bio}</p>
+                ) : null}
 
                 {member.badges && member.badges.length > 0 ? (
                   <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border/60 pt-4">
