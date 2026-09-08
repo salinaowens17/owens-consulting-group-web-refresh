@@ -52,7 +52,7 @@ const team: Member[] = [
     name: "Julie Spradley",
     credentials: "CHMM, REM",
     title: "CEO",
-    bio: "With over 35 years of experience in the Solid Waste industry, Julie has worked as a Sr. TCEQ Investigator, completed extensive groundwater fieldwork, and provided environmental training and consulting. She formed OCG in 2010.",
+    bio: "Julie formed OCG in 2010 providing various environmental consulting and safety training. Her solid waste experience includes assorted technical & fieldwork for environmental engineering firms, a TCEQ Sr. Investigator and the EHS Manager for a RCRA TSDF and Wastewater Treatment Plant.",
     photo: teamJulie,
     badges: [
       { src: credChmm, alt: "Certified Hazardous Materials Manager (CHMM)" },
