@@ -78,6 +78,33 @@ function isUpcoming(session: Session): boolean {
   return end.getTime() >= today.getTime();
 }
 
+/**
+ * Parse a session date string and return the START date of the session.
+ * Returns null for unparseable strings (e.g. "TBD") so they can sort last.
+ */
+function parseSessionStartDate(input: string): Date | null {
+  const cleaned = input.replace(/\u200B/g, "").trim();
+  const monthMatch = cleaned.match(/(january|february|march|april|may|june|july|august|september|october|november|december)/i);
+  const yearMatch = cleaned.match(/(\d{4})/);
+  const dayMatch = cleaned.match(/(\d{1,2})(st|nd|rd|th)/);
+  if (!monthMatch || !yearMatch || !dayMatch) return null;
+  return new Date(
+    parseInt(yearMatch[1], 10),
+    MONTHS[monthMatch[1].toLowerCase()],
+    parseInt(dayMatch[1], 10),
+  );
+}
+
+/** Oldest first; sessions without a parseable date (TBD) go last. */
+function byStartDate(a: Session, b: Session): number {
+  const da = parseSessionStartDate(a.date);
+  const db = parseSessionStartDate(b.date);
+  if (!da && !db) return 0;
+  if (!da) return 1;
+  if (!db) return -1;
+  return da.getTime() - db.getTime();
+}
+
 
 const inPersonSessions: Session[] = [
   {
@@ -472,7 +499,10 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
     },
     {},
   );
-  const groupList = Object.values(groups);
+  const groupList = Object.values(groups).map((group) => ({
+    ...group,
+    items: [...group.items].sort(byStartDate),
+  }));
 
   return (
     <section id="online" className="mx-auto max-w-6xl px-5 py-20 md:px-8 scroll-mt-24">
