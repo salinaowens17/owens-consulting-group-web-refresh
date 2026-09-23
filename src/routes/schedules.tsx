@@ -81,6 +81,22 @@ function isUpcoming(session: Session): boolean {
 
 const inPersonSessions: Session[] = [
   {
+    date: "March 16th - 18th, 2027",
+    course: "MSW A",
+    code: "TCEQ #513",
+    duration: "24 hours",
+    location: "Lower Rio Grande Valley Council of Governments",
+    seats: "Seats available",
+  },
+  {
+    date: "July 13th - 15th, 2027",
+    course: "MSW B",
+    code: "TCEQ #514",
+    duration: "24 hours",
+    location: "Lower Rio Grande Valley Council of Governments",
+    seats: "Seats available",
+  },
+  {
     date: "July 21st - 23rd, 2026",
     course: "​MSW A",
     code: "TCEQ #513",
@@ -107,7 +123,23 @@ const inPersonSessions: Session[] = [
 ];
 
 const onlineSessions: Session[] = [
-  // MSW A — 4 slots
+  // MSW A
+  {
+    date: "January 19th - 21st, 2027",
+    course: "MSW A Supervisor Licensing Course",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: January 8th",
+  },
+  {
+    date: "April 6th - 8th, 2027",
+    course: "MSW A Supervisor Licensing Course",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: March 26th",
+  },
   {
     date: "June 2nd - 4th, 2026",
     course: "MSW A Supervisor Licensing Course",
