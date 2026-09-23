@@ -307,7 +307,7 @@ function SchedulesPage() {
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Browse upcoming TCEQ-approved courses.&nbsp;
               <br />
-              Reserve your seat by downloading the registration form and emailing it back to us.
+              To reserve your seat: Download the registration form and email it back to us.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <a
