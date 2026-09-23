@@ -499,7 +499,10 @@ function OnlineScheduleSection({ sessions }: { sessions: Session[] }) {
     },
     {},
   );
-  const groupList = Object.values(groups);
+  const groupList = Object.values(groups).map((group) => ({
+    ...group,
+    items: [...group.items].sort(byStartDate),
+  }));
 
   return (
     <section id="online" className="mx-auto max-w-6xl px-5 py-20 md:px-8 scroll-mt-24">
