@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Calendar, Download, MapPin, Monitor, Users } from "lucide-react";
+import { Calendar, MapPin, Monitor, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 import seaTurtleImage from "@/assets/sea-turtle.jpg";
 import {
