@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Calendar, Download, MapPin, Monitor, Users } from "lucide-react";
+import { Calendar, MapPin, Monitor, Users } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 import seaTurtleImage from "@/assets/sea-turtle.jpg";
 import {
@@ -308,24 +308,6 @@ function SchedulesPage() {
               Browse upcoming TCEQ-approved courses. Reserve your seat by downloading the
               registration form and emailing it back to us.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={ONLINE_REGISTRATION_PDF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-              >
-                <Download className="h-4 w-4" /> Online course registration (PDF)
-              </a>
-              <a
-                href={IN_PERSON_REGISTRATION_PDF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-              >
-                <Download className="h-4 w-4" /> In-person course registration (PDF)
-              </a>
-            </div>
             <p className="mt-5 text-xs text-muted-foreground">
               ​
             </p>
