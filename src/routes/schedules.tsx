@@ -308,9 +308,6 @@ function SchedulesPage() {
               Browse upcoming TCEQ-approved courses. Reserve your seat by downloading the
               registration form and emailing it back to us.
             </p>
-            <p className="mt-5 text-xs text-muted-foreground">
-              ​
-            </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
             <img
