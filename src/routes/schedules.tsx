@@ -309,6 +309,24 @@ function SchedulesPage() {
               <br />
               Reserve your seat by downloading the registration form and emailing it back to us.
             </p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <a
+                href={ONLINE_REGISTRATION_PDF}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Online Class Registration Form
+              </a>
+              <a
+                href={IN_PERSON_REGISTRATION_PDF}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                In-person Class Registration Form
+              </a>
+            </div>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
             <img
