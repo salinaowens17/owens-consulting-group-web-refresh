@@ -312,8 +312,7 @@ function SchedulesPage() {
             <div className="mt-7 flex flex-wrap gap-4">
               <a
                 href={ONLINE_REGISTRATION_PDF}
-                target="_blank"
-                rel="noreferrer"
+                download="10-2026-27_Registration_Form.pdf"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Online Class Registration Form
