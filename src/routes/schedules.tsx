@@ -133,14 +133,6 @@ const inPersonSessions: Session[] = [
   },
   {
     date: "TBD",
-    course: "MSW B",
-    code: "TCEQ #514",
-    duration: "24 hours",
-    location: "Houston, Texas",
-    seats: "Seats available",
-  },
-  {
-    date: "TBD",
     course: "MSW A",
     code: "TCEQ #513",
     duration: "24 hours",
