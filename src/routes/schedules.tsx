@@ -320,8 +320,7 @@ function SchedulesPage() {
               </a>
               <a
                 href={IN_PERSON_REGISTRATION_PDF}
-                target="_blank"
-                rel="noreferrer"
+                download="2027_In-person_registration_form.pdf"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 In-person Class Registration Form
