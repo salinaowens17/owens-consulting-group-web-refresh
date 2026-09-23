@@ -305,8 +305,9 @@ function SchedulesPage() {
               Upcoming course dates — online and in person.
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Browse upcoming TCEQ-approved courses. Reserve your seat by downloading the
-              registration form and emailing it back to us.
+              Browse upcoming TCEQ-approved courses.&nbsp;
+              <br />
+              Reserve your seat by downloading the registration form and emailing it back to us.
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
