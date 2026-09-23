@@ -81,6 +81,22 @@ function isUpcoming(session: Session): boolean {
 
 const inPersonSessions: Session[] = [
   {
+    date: "March 16th - 18th, 2027",
+    course: "MSW A",
+    code: "TCEQ #513",
+    duration: "24 hours",
+    location: "Lower Rio Grande Valley Council of Governments",
+    seats: "Seats available",
+  },
+  {
+    date: "July 13th - 15th, 2027",
+    course: "MSW B",
+    code: "TCEQ #514",
+    duration: "24 hours",
+    location: "Lower Rio Grande Valley Council of Governments",
+    seats: "Seats available",
+  },
+  {
     date: "July 21st - 23rd, 2026",
     course: "​MSW A",
     code: "TCEQ #513",
@@ -107,7 +123,23 @@ const inPersonSessions: Session[] = [
 ];
 
 const onlineSessions: Session[] = [
-  // MSW A — 4 slots
+  // MSW A
+  {
+    date: "January 19th - 21st, 2027",
+    course: "MSW A Supervisor Licensing Course",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: January 8th",
+  },
+  {
+    date: "April 6th - 8th, 2027",
+    course: "MSW A Supervisor Licensing Course",
+    code: "TCEQ #513",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: March 26th",
+  },
   {
     date: "June 2nd - 4th, 2026",
     course: "MSW A Supervisor Licensing Course",
@@ -132,7 +164,23 @@ const onlineSessions: Session[] = [
     location: "Online (Zoom)",
     seats: "Seats available",
   },
-  // MSW B — 8 slots
+  // MSW B
+  {
+    date: "February 16th - 18th, 2027",
+    course: "MSW B Supervisor Licensing Course",
+    code: "TCEQ #514",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: February 5th",
+  },
+  {
+    date: "March 2nd - 4th, 2027",
+    course: "MSW B Supervisor Licensing Course",
+    code: "TCEQ #514",
+    duration: "24 hours · live virtual",
+    location: "Online (Zoom)",
+    seats: "Last day to register: February 19th",
+  },
   {
     date: "June 30th - July 2nd, 2026",
     course: "MSW B Supervisor Licensing Course",
@@ -165,7 +213,31 @@ const onlineSessions: Session[] = [
     location: "Online (Zoom)",
     seats: "Seats available",
   },
-  // Waste Screening — 5 slots
+  // Waste Screening
+  {
+    date: "January 22nd, 2027",
+    course: "Waste Screening",
+    code: "TCEQ #341",
+    duration: "8 hours · live virtual",
+    location: "Online",
+    seats: "Open enrollment",
+  },
+  {
+    date: "March 5th, 2027",
+    course: "Waste Screening",
+    code: "TCEQ #341",
+    duration: "8 hours · live virtual",
+    location: "Online",
+    seats: "Open enrollment",
+  },
+  {
+    date: "April 9th, 2027",
+    course: "Waste Screening",
+    code: "TCEQ #341",
+    duration: "8 hours · live virtual",
+    location: "Online",
+    seats: "Open enrollment",
+  },
   {
     date: "July 3rd, 2026",
     course: "Waste Screening",
