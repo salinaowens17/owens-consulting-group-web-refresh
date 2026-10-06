@@ -27,7 +27,24 @@ export const Route = createFileRoute("/faq")({
       {
         property: "og:description",
         content:
-          "MSW A & B license requirements, registration, exams, and license renewals — answered.",
+"MSW A & B license requirements, registration, exams, and license renewals — answered.",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.schemaAnswer,
+            },
+          })),
+        }),
       },
     ],
   }),
@@ -37,11 +54,14 @@ export const Route = createFileRoute("/faq")({
 type FaqEntry = {
   q: string;
   a: React.ReactNode;
+  schemaAnswer: string;
 };
 
 const faqs: FaqEntry[] = [
   {
     q: "How do I register for a class?",
+    schemaAnswer:
+      "Download and complete the course registration form, then email the completed form to owenscgtx@gmail.com.",
     a: (
       <p>
         Download and complete the course registration form, then email the completed form to{" "}
@@ -54,6 +74,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "What are the requirements for an MSW A License?",
+    schemaAnswer:
+      "To obtain an MSW A license, an applicant with a high school degree is required to have four (4) years' actual experience gained from participating as a principal operator, foreman, supervisor, or manager of a solid waste facility. College credit hours may be substituted for experience in some cases. An applicant must also complete the MSW A Supervisor Course #513 and the MSW B Supervisor Course #514. Reference: 30 TAC 30.18(h), 30 TAC 30.207 and 30.210.",
     a: (
       <>
         <p>
@@ -74,6 +96,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "What are the requirements for an MSW B License?",
+    schemaAnswer:
+      "To obtain an MSW B license, an applicant with a high school degree is required to have two (2) years' actual experience gained from participating as a principal operator, foreman, supervisor, or manager of a solid waste facility. College credit hours may be substituted for experience in some cases. An applicant must also complete the MSW B Supervisor Course #514. Individuals managing or supervising medical waste or compost facilities requiring a Permit or Registration shall complete a TCEQ recognized or approved specialized training course that is applicable to that facility before being issued a standard MSW B license. Reference: 30 TAC 30.18(h), 30 TAC 30.207 and 30.210.",
     a: (
       <>
         <p>
@@ -97,6 +121,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "If I'm seeking an MSW A license, do I have to take the courses in a certain order?",
+    schemaAnswer:
+      "No. There is no regulation or rule citation that requires you to take the courses in any particular order. Take the courses according to availability and to suit your schedule.",
     a: (
       <p>
         <strong>No.</strong> There is no regulation or rule citation that requires you to take the
@@ -107,6 +133,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "What if I don't meet the experience requirement?",
+    schemaAnswer:
+      "You have the option of a \"Provisional License.\" A Provisional license is valid for 2 years and is not renewable. When you meet the requirement, you may apply for the standard license. Reference: 30 TAC 30.211.",
     a: (
       <p>
         You have the option of a &ldquo;Provisional License.&rdquo; A Provisional license is valid
@@ -117,6 +145,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "Do you have online classes? In-person classes?",
+    schemaAnswer:
+      "Yes, and yes. Both our online and in-person course schedules are available on our website.",
     a: (
       <>
         <p>Yes, and yes.</p>
@@ -126,6 +156,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "What format are the online classes conducted in?",
+    schemaAnswer:
+      "Online classes are held on the Web-Ex platform with a live instructor. After registering for a class, the manual(s) will be mailed out two Fridays prior to the course start date (classes always begin on a Tuesday). You will receive an email the Friday before the course start date with the link to the course and other related information and material.",
     a: (
       <p>
         Online classes are held on the Web-Ex platform with a live instructor. After registering
@@ -137,6 +169,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "Where do I submit my initial license application?",
+    schemaAnswer:
+      "Those who complete the MSW A and/or MSW B course(s) will receive an email with the link to the application, a Helpful Hints sheet for successful completion of the application, an Exam Question Matrix, and a Study Guide for the respective course. Begin the application at https://www3.tceq.texas.gov/sunss/.",
     a: (
       <>
         <p>
@@ -160,6 +194,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "How can I check the status of my application?",
+    schemaAnswer:
+      "The application review and approval process takes approximately 3–4 weeks. Once approved, you will be able to register to take the exam. Check the status of your application at https://www2.tceq.texas.gov/lic_dpa/index.cfm?fuseaction=licall.searchindiv.",
     a: (
       <>
         <p>
@@ -182,6 +218,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "Upon application approval, where do I sign up to take the test?",
+    schemaAnswer:
+      "Sign up to take the test at https://www.tceq.texas.gov/licensing/exams/cbt_occ_lic.html. Please note that there will be a fee to take the test. Fees are at the discretion of the testing facility.",
     a: (
       <>
         <p>
@@ -203,6 +241,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "I received a Notice of Deficiency (NOD) letter. What do I do now?",
+    schemaAnswer:
+      "Read the letter carefully — it will detail the required corrective action(s) you are to complete. When requested, respond to the letter's corrective action(s) as directed. All deficiencies must be resolved within 120 days of notification, or the application will be considered expired. Reference: 30 TAC 30.18(g).",
     a: (
       <>
         <p>
@@ -219,6 +259,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "My license has expired. What are my options?",
+    schemaAnswer:
+      "If your license has expired, you have a 180-day window to submit your renewal application. Days 1–90: the renewal fee is 1.5 times the regular fee of $111. Days 91–180: the renewal fee is 2 times the regular fee of $111. Reference: HB 1237, effective September 1, 2025. This \"grace period\" applies when you have completed your renewal CEUs prior to the expiration date of your license. If you have not completed your hours within that time frame, you will need to contact the TCEQ Licensing Section to coordinate your options.",
     a: (
       <>
         <p>
@@ -264,10 +306,13 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "How long is the MSW License valid?",
+    schemaAnswer: "Three years from the approval date.",
     a: <p>Three years from the approval date.</p>,
   },
   {
     q: "When can I renew my license?",
+    schemaAnswer:
+      "You may renew your license after you have completed the Continuing Education Units (CEU) requirement (16 hours) and only during the 90-day period prior to the expiration of the license. You will receive a renewal post card in the mail from TCEQ reminding you of your license expiration date. Please make sure your address is accurate in the TCEQ database; you may update administrative information in the TCEQ system.",
     a: (
       <>
         <p>
@@ -294,6 +339,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "Where do I submit my renewal application?",
+    schemaAnswer:
+      "Once you have completed your CEUs, you will receive an email confirming that your hours have been uploaded to the TCEQ database, along with the link to the license renewal application. Apply to renew your license through the TCEQ License Renewal site.",
     a: (
       <>
         <p>
@@ -317,6 +364,8 @@ const faqs: FaqEntry[] = [
   },
   {
     q: "Who is responsible for renewing my license?",
+    schemaAnswer:
+      "You are responsible for renewing your license. The license is in your name — no one else's. Your company is not responsible for renewing your license. Your training provider is not responsible for renewing your license.",
     a: (
       <p>
         <strong>You</strong> are responsible for renewing your license. The license is in your
