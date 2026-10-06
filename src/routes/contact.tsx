@@ -6,8 +6,11 @@ import contactSwingImage from "@/assets/contact-swing.jpeg.asset.json";
 import cowImage from "@/assets/cow.jpg";
 
 export const Route = createFileRoute("/contact")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Contact — Owens Consulting Group, LLC" },
       {
         name: "description",

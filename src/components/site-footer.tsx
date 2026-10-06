@@ -60,9 +60,6 @@ export function SiteFooter() {
               </p>
             </div>
           </div>
-          <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/75">
-            ​
-          </p>
         </div>
 
         <div>

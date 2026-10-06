@@ -8,8 +8,11 @@ import {
 } from "@/lib/registration-forms";
 
 export const Route = createFileRoute("/schedules")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Course Schedules — Owens Consulting Group, LLC" },
       {
         name: "description",

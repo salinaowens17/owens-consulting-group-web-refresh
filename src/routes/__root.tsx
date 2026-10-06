@@ -25,26 +25,14 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Owens Consulting Group, LLC — Environmental Compliance Training in Texas" },
-      {
-        name: "description",
-        content:
-          "TCEQ-approved environmental compliance training and consulting in Texas. MSW supervisor licensing, waste screening, and chemical inventory audits.",
-      },
       { name: "author", content: "Owens Consulting Group, LLC" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { property: "og:title", content: "Owens Consulting Group, LLC — Environmental Compliance Training in Texas" },
-      { name: "twitter:title", content: "Owens Consulting Group, LLC — Environmental Compliance Training in Texas" },
-      { name: "description", content: "A modern web application prototype for Owens Consulting Group, showcasing environmental compliance services." },
-      { property: "og:description", content: "A modern web application prototype for Owens Consulting Group, showcasing environmental compliance services." },
-      { name: "twitter:description", content: "A modern web application prototype for Owens Consulting Group, showcasing environmental compliance services." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eb22c11e-7b1e-4648-a05d-0481598dab10/id-preview-2e1e5214--f9ed4aef-55a5-49d9-8806-8d68828f770e.lovable.app-1777914645185.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eb22c11e-7b1e-4648-a05d-0481598dab10/id-preview-2e1e5214--f9ed4aef-55a5-49d9-8806-8d68828f770e.lovable.app-1777914645185.png" },
     ],
     links: [
       { rel: "icon", type: "image/png", sizes: "96x96", href: "/favicon-96.png" },

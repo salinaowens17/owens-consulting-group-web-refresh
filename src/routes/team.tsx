@@ -12,8 +12,11 @@ import credAipg from "@/assets/cred-aipg.png";
 import credNrep from "@/assets/nrep-logo.png";
 
 export const Route = createFileRoute("/team")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Meet Our Team — Owens Consulting Group, LLC" },
       {
         name: "description",

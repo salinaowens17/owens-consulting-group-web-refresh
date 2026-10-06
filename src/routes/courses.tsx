@@ -18,8 +18,11 @@ import landfillAerial from "@/assets/courses-hero-pier.jpeg";
 import cprBadge from "@/assets/cpr-first-aid-aed-certified.png";
 
 export const Route = createFileRoute("/courses")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Courses & Services — Owens Consulting Group, LLC" },
       {
         name: "description",
@@ -102,14 +105,12 @@ const services = [
     eyebrow: "On-site",
     title: "Site-Specific SOP Training",
     body: "Site Operating Plan (SOP) training — annual & refresher — designed to meet the requirements in 30 TAC 330.127. Delivered on-site for your team and tailored to meet the requirements of your facility's site operating plan.",
-    cite: "​",
   },
   {
     icon: <ClipboardCheck className="h-5 w-5" />,
     eyebrow: "Audit & review",
     title: "Chemical Inventory Audits",
     body: "Comprehensive review and audit of all chemicals maintained on-site, paired with the most current Safety Data Sheets (SDSs).  Compliant with OSHA Standard 29 CFR 1910.1200(g).",
-    cite: "​",
   },
 ];
 
@@ -120,9 +121,6 @@ function CoursesAndServicesPage() {
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
             <div>
-              <span className="text-xs font-medium uppercase tracking-[0.18em] text-accent text-slate-950">
-                ​
-              </span>
               <h1 className="mt-3 max-w-3xl font-serif text-4xl font-semibold leading-tight text-primary md:text-5xl">
                 Courses & services for MSW Supervisors and Operators
               </h1>
