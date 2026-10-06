@@ -9,8 +9,11 @@ import {
 } from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/faq")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "FAQ — Owens Consulting Group, LLC" },
       {
         name: "description",

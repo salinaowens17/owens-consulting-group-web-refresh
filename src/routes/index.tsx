@@ -4,8 +4,11 @@ import { SiteShell } from "@/components/site-shell";
 import heroTeaching from "@/assets/ocg-logo-hero.jpg";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Owens Consulting Group, LLC — TCEQ-Approved Environmental Training in Texas" },
       {
         name: "description",
@@ -44,9 +47,6 @@ function HomePage() {
               <h1 className="mt-5 text-balance font-serif text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-primary sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
                 OCG is a TCEQ approved, MSW License training provider
               </h1>
-              <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-6">
-                ​
-              </p>
               <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-9">
                 <Link
                   to="/courses"
