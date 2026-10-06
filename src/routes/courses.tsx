@@ -39,6 +39,31 @@ export const Route = createFileRoute("/courses")({
           "Supervisor licensing, waste screening, specialized medical waste, First Aid/CPR/AED certification, on-site SOP training, and chemical inventory audits for Texas.",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": courses.map((course) => ({
+            "@type": "Course",
+            name: course.title,
+            description: course.body,
+            courseCode: course.code,
+            timeRequired: course.duration === "24 hours" ? "PT24H" : "PT8H",
+            educationalAudience: {
+              "@type": "EducationalAudience",
+              educationalRole: course.audience,
+            },
+            provider: {
+              "@type": "Organization",
+              name: "Owens Consulting Group, LLC",
+              url: "https://owensconsulting.org",
+            },
+            url: "https://owensconsulting.org/courses#courses",
+          })),
+        }),
+      },
+    ],
   }),
   component: CoursesAndServicesPage,
 });
