@@ -182,14 +182,14 @@ function ContactPage() {
 
               {submitted && (
                 <div className="mt-5 rounded-md border border-accent/30 bg-accent/10 px-4 py-3 text-sm text-accent">
-                  Thanks — this is a prototype, so the form isn't wired up yet. Please email{" "}
+                  Your message has been prepared for your email app. Send it there to contact{" "}
                   <a
                     href="mailto:owenscgtx@gmail.com"
                     className="font-medium underline"
                   >
                     owenscgtx@gmail.com
                   </a>{" "}
-                  directly.
+                  . If your email app did not open, email us directly.
                 </div>
               )}
 
