@@ -225,7 +225,7 @@ function CoursesAndServicesPage() {
             TCEQ-approved courses
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white">
-            In-person and online schedules are available throughout 2026.
+            In-person and online schedules are available throughout the year.
           </p>
         </div>
 
